@@ -9,7 +9,7 @@
     "MenuHoldTime": 1.0,
     "SilverlightConnectTimeout": 60000,
     "BaseClassName": "BaseWebAiiTest",
-    "UrlRecordMode": 2,
+    "UrlRecordMode": 4,
     "HighlightBorderColor": -65536,
     "HighlightBorderSize": 1,
     "CodeGenerationElementIdentificationType": 1,
@@ -50,6 +50,14 @@
                   "__value": {
                     "IsLocked": false,
                     "SearchType": 0,
+                    "AttributeName": "value"
+                  }
+                },
+                {
+                  "__type": "ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor",
+                  "__value": {
+                    "IsLocked": false,
+                    "SearchType": 0,
                     "AttributeName": "src"
                   }
                 },
@@ -59,14 +67,6 @@
                     "IsLocked": false,
                     "SearchType": 0,
                     "AttributeName": "href"
-                  }
-                },
-                {
-                  "__type": "ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor",
-                  "__value": {
-                    "IsLocked": false,
-                    "SearchType": 0,
-                    "AttributeName": "value"
                   }
                 },
                 {
@@ -155,21 +155,21 @@
     "SimulateRealClickByDefault": false,
     "SimulateRealTypingByDefault": false,
     "SimulateRealSilverlightUserByDefault": true,
-    "DefaultDropDownSelection": 1,
+    "DefaultDropDownSelection": 2,
     "QuickExecutionElementWaitTimeout": 30000,
     "QuickExecutionClientReadyTimeout": 60000,
     "QcServerUrl": null,
-    "QcUserName": null,
+    "QcUserName": "",
     "QcPassword": "",
     "QcSkipAuthDialog": false,
     "QcDomain": null,
     "QcProject": null,
-    "TfsUserName": null,
+    "TfsUserName": "",
     "TfsPassword": "",
     "TfsSkipAuthDialog": true,
-    "TfsDomain": null,
+    "TfsDomain": "",
     "TeamPulseServerUrl": "",
-    "TpUserName": null,
+    "TpUserName": "",
     "TpPassword": "",
     "TpUseWindowsAuth": false,
     "TpSkipAuthDialog": false,
@@ -207,6 +207,6 @@
     "BugAddAttachment": true,
     "BugAutoSubmit": false,
     "BugDescriptionMask": "{Description}",
-    "SelectedBrowserOption": 0
+    "SelectedBrowserOption": 4
   }
 }
