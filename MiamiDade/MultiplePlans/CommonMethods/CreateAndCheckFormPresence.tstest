@@ -17,7 +17,7 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "ebe536bc-541c-495e-8c8f-6de770777300",
+            "Runtime ID": "b0dfa627-19ad-4c0c-8e71-c6c58e1b48f5",
             "Description": "IF (Verify 'TextContent' 'NotContain' '' on 'EventListTable')",
             "CustomDescription": null,
             "Step": {
@@ -509,7 +509,7 @@
                                             "uniqueKey": "vGFmQglZlzpaioGk9843qx3K3Ow=",
                                             "NodeKind": 4,
                                             "TechnologyType": 1,
-                                            "Name": "EventListToCreate0",
+                                            "Name": "EventListToCreate",
                                             "FindExpressions": [
                                               {
                                                 "Key": 1,
@@ -1254,7 +1254,7 @@
                               "Order": 10,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSP4wbbgejp.23p",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -1477,7 +1477,7 @@
                               "Order": 12,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPblmnl1gt.4iw",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -1580,7 +1580,7 @@
                                             ],
                                             "BackupSearchClause": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[17]/td[2]/span[1]/a[1]",
                                             "DataBindingExpressions": {
-                                              "Expression": "tagname=table,id=pnlEventMenu,|,tagname=a,TextContent=$(FormName)"
+                                              "Expression": "tagname=table,id=pnlEventMenu,|,tagname=a,TextContent=~$(FormName)"
                                             }
                                           }
                                         },
@@ -1602,7 +1602,7 @@
                               "Order": 13,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPdfarajej.yyg",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -1833,7 +1833,7 @@
                               "Order": 15,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPcbwowm3u.aw2",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -2185,7 +2185,7 @@
                               "Order": 1,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPismw0xrq.4cj",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -2408,7 +2408,7 @@
                               "Order": 3,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPw5re33uv.yle",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -2511,7 +2511,7 @@
                                             ],
                                             "BackupSearchClause": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[17]/td[2]/span[1]/a[1]",
                                             "DataBindingExpressions": {
-                                              "Expression": "tagname=table,id=pnlEventMenu,|,tagname=a,TextContent=$(FormName)"
+                                              "Expression": "tagname=table,id=pnlEventMenu,|,tagname=a,TextContent=~$(FormName)"
                                             }
                                           }
                                         },
@@ -2533,7 +2533,7 @@
                               "Order": 4,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPrscik2pu.cxt",
                               "QcId": 0,
                               "QcVersionStamp": 0,
@@ -2764,7 +2764,7 @@
                               "Order": 6,
                               "Id": "",
                               "StepState": 0,
-                              "ContinueOnFailure": false,
+                              "ContinueOnFailure": true,
                               "StepImageKey": "CheckEvaluationDataModuleIFSPrpstnhot.uqh",
                               "QcId": 0,
                               "QcVersionStamp": 0,

@@ -17,22 +17,17 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "3133386c-ef13-47da-9361-02c6ccba03e0",
-            "Description": "Navigate to : '/IEP/Students/ViewStudent?CommonStudentId=4787406&studentViewType=Events&programType=MiamiIFSP'",
+            "Runtime ID": "d0164404-b49e-466d-b71c-dbd468484913",
+            "Description": "ChooseURL IFSP based on base url",
             "CustomDescription": null,
             "Step": {
-              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.NavigateToActionDescriptor",
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.CodedStepDescriptor",
               "__value": {
-                "UseDecodedUrl": true,
-                "NavigateURL": "/IEP/Students/ViewStudent?CommonStudentId=4787406&studentViewType=Events&programType=MiamiIFSP",
-                "BaseUrl": "http://miami.acceliqc.com",
-                "WaitOnElementsTimeout": 0,
+                "Code": "                        String bbaseUrl = Settings.Current.Web.BaseUrl.ToString();\r\n                        String studentID = \"0\";\r\n                        \r\n                        if ((bbaseUrl.Contains(\"miami.acceliqc.com\")))\r\n            \t{\r\n            \t    studentID = \"43657\";\r\n            \t}\r\n            \telse if (bbaseUrl.Contains(\"miami-demo.accelidemo.com\"))\r\n            \t{\r\n            \t    studentID = \"14\";\r\n                   \r\n            \t}\r\n                \r\n                String address = \"/IEP/Students/ViewStudent?CommonStudentId=\"+studentID+\"&studentViewType=Events&programType=MiamiIFSP\";\r\n                 ActiveBrowser.NavigateTo(Settings.Current.Web.BaseUrl+address, true);\r\n            ",
+                "RequiresSilverlight": false,
+                "WaitOnElements": true,
+                "WaitOnElementsTimeout": 30000,
                 "UseStepWaitOnElementsTimout": false,
-                "WaitOnElements": false,
-                "UsejQuery": false,
-                "UseBackupSearch": true,
-                "ClosesBrowser": false,
-                "AjaxTimeout": 0,
                 "Pause": 0,
                 "RunsAgainstVersion": "",
                 "Constraints": {
@@ -50,10 +45,10 @@
             },
             "Enabled": true,
             "Order": 1,
-            "Id": "",
-            "StepState": 0,
+            "Id": "ChooseUrl_IFSP",
+            "StepState": 1,
             "ContinueOnFailure": false,
-            "StepImageKey": "6111_EligWorkflowjnefuzcq.scn",
+            "StepImageKey": "GoToStIFSPEvents4w331mxq.p31",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200
@@ -182,10 +177,10 @@
     "UseDefaultWpfAppPath": false,
     "TestAssembly": "MiamiDade.dll",
     "TestAssemblyPath": "bin",
-    "TestClass": "",
+    "TestClass": "MiamiDade.GoToStIFSPEvents",
     "IsManual": false,
     "ResourceFilePath": "Methods\\GoToStIFSPEvents.resx",
-    "HasCodeBehind": false,
+    "HasCodeBehind": true,
     "DataInfo": {
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
       "__value": {

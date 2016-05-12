@@ -67,8 +67,8 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "53b64c64-db8d-4b6e-8577-7d02c96733fa",
-            "Description": "Execute test 'GoToSt504Events'",
+            "Runtime ID": "b0367bf3-6daf-4339-9e70-199ae47661ca",
+            "Description": "Execute test 'GoToStIFSPEvents'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExecuteTestActionDescriptor",
@@ -76,9 +76,9 @@
                 "WaitOnElementsTimeout": 0,
                 "UseStepWaitOnElementsTimout": false,
                 "WaitOnElements": false,
-                "TestName": "GoToSt504Events",
-                "TestPath": "Methods\\GoToSt504Events.tstest",
-                "TestUniqueId": "51ab7fae-1eb4-4de3-a106-933e09821a68",
+                "TestName": "GoToStIFSPEvents",
+                "TestPath": "Methods\\GoToStIFSPEvents.tstest",
+                "TestUniqueId": "cfe4db5a-59fd-43df-804d-646e05a86e50",
                 "Pause": 0,
                 "RunsAgainstVersion": "",
                 "Constraints": {
@@ -99,7 +99,7 @@
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
-            "StepImageKey": "CheckEvaluationPresenceTestfqavjdf1.jqq",
+            "StepImageKey": "CheckEvaluationPresenceTestIFSPa042saok.4kw",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200
@@ -108,8 +108,8 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "22d43a39-7cdb-4349-af31-85254108d3d5",
-            "Description": "Execute test 'CheckEvaluationDataModule504'",
+            "Runtime ID": "7ad1e053-404b-4668-abc2-cc66e80e18ef",
+            "Description": "Execute test 'CheckEvaluationDataModuleIFSP'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExecuteTestActionDescriptor",
@@ -117,9 +117,9 @@
                 "WaitOnElementsTimeout": 0,
                 "UseStepWaitOnElementsTimout": false,
                 "WaitOnElements": false,
-                "TestName": "CheckEvaluationDataModule504",
-                "TestPath": "MultiplePlans\\Evaluation\\CheckEvaluationDataModule504.tstest",
-                "TestUniqueId": "9fffc6eb-4269-4f04-b6f0-05c947fa0e34",
+                "TestName": "CheckEvaluationDataModuleIFSP",
+                "TestPath": "MultiplePlans\\Evaluation\\CheckEvaluationDataModuleIFSP.tstest",
+                "TestUniqueId": "3ac5afb0-21c9-467c-bb9b-f56aa8a58f5b",
                 "Pause": 0,
                 "RunsAgainstVersion": "",
                 "Constraints": {
@@ -140,7 +140,7 @@
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
-            "StepImageKey": "CheckEvaluationPresenceTest2t1oy2e3.vih",
+            "StepImageKey": "CheckEvaluationPresenceTestIFSPfsywxcbr.ozc",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200

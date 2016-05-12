@@ -167,6 +167,46 @@
             "QcVersionStamp": 0,
             "Version": 200
           }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "58a116d8-8860-4b66-8841-bf712fbed75b",
+            "Description": "ChooseURL 504 based on base url",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.CodedStepDescriptor",
+              "__value": {
+                "Code": "                        String bbaseUrl = Settings.Current.Web.BaseUrl.ToString();\r\n                        String studentID = \"0\";\r\n                        \r\n                        if ((bbaseUrl.Contains(\"miami.acceliqc.com\")))\r\n            \t{\r\n            \t    studentID = \"43657\";\r\n            \t}\r\n            \telse if (bbaseUrl.Contains(\"miami-demo.accelidemo.com\"))\r\n            \t{\r\n            \t    studentID = \"14\";\r\n                   \r\n            \t}\r\n                \r\n                String address = \"/IEP/Students/ViewStudent?CommonStudentId=\"+studentID+\"&studentViewType=Events&programType=Miami504\";\r\n                 ActiveBrowser.NavigateTo(Settings.Current.Web.BaseUrl+address, true);\r\n            ",
+                "RequiresSilverlight": false,
+                "WaitOnElements": true,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "Pause": 0,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {}
+                  }
+                },
+                "Elements": {},
+                "StepType": 4,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 3,
+            "Id": "ChooseUrl_504",
+            "StepState": 1,
+            "ContinueOnFailure": false,
+            "StepImageKey": "GoToSt504Eventsrv0cgplb.q5t",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
         }
       ]
     },
@@ -182,10 +222,10 @@
     "UseDefaultWpfAppPath": false,
     "TestAssembly": "MiamiDade.dll",
     "TestAssemblyPath": "bin",
-    "TestClass": "",
+    "TestClass": "MiamiDade.GoToSt504Events",
     "IsManual": false,
     "ResourceFilePath": "Methods\\GoToSt504Events.resx",
-    "HasCodeBehind": false,
+    "HasCodeBehind": true,
     "DataInfo": {
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
       "__value": {

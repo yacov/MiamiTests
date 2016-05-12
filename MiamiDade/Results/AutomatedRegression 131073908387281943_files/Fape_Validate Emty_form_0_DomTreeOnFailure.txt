@@ -1,0 +1,603 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="header">
+		<script type="text/javascript" src="Scripts/jquery-1.7.2.min.js"></script><style type="text/css"></style>
+		<script type="text/javascript" src="Scripts/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.json-2.2.min.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.autogrow.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.maskedinput-1.3.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.maxlength.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.ui.touch-punch.js"></script>
+		<script type="text/javascript" src="https://asset0.zendesk.com/external/zenbox/v2.4/zenbox.js"></script>
+		<link rel="shortcut icon" href="App_Themes/Default/Images/favicon.ico">
+		<style type="text/css" media="screen, projection">
+			@import url(https://asset0.zendesk.com/external/zenbox/v2.4/zenbox.css);
+		</style>
+	<link href="App_Themes/Default/jquery.cleditor.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/jquery.tooltip.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/jquery-ui-1.8.14.custom.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/StylesButton.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/StylesCommon.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/StylesDayPilot.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/StylesMenu.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/StylesOther.css" type="text/css" rel="stylesheet"><link href="App_Themes/Default/Yahoo/calendar.css" type="text/css" rel="stylesheet"><title>
+	Login
+</title><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/tat_popup.js" async=""></script></head>
+
+<body>
+	<div id="pnlSessionCountdownIndicator" class="sessionExpired" style="display: none;">
+		<div class="text">
+			<span class="warning">
+				Your login session will expire in <span id="timer"></span> seconds.
+			</span>
+			<span class="expired">
+				Your login session has expired.
+			</span>
+		</div>
+		<a onclick="SessionCounterManager.ResetSessionTimeout(); return false;" class="button warning">Click To Keep Session Alive</a>
+		<a onclick="SessionCounterManager.Check(); return false;" class="button expired">Please Sign In Again</a>
+	</div>
+	<form name="frmMain" method="post" action="Login.aspx?ReturnUrl=%2fIEP%2fEvents%2fViewEvent%3fEventId%3d361ad431-b6d1-4050-ae1b-a5cc00a4e528&amp;EventId=361ad431-b6d1-4050-ae1b-a5cc00a4e528" onsubmit="javascript:return WebForm_OnSubmit();" id="frmMain">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzNzg4OTQ4NzcPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg9kFgICAw9kFgICAQ9kFgYCAg9kFgJmD2QWAgIBD2QWCAIBDw9kFgIeC3BsYWNlaG9sZGVyBQhVc2VybmFtZWQCBQ8PZBYCHwEFCFBhc3N3b3JkZAIJDxAPFgIeC18hRGF0YUJvdW5kZ2QQFQYNVGFrZSBtZSB0by4uLg5RdWljayBSZWNvcmRlchFTZXJ2aWNlIFNjaGVkdWxlchdTaW5nbGUgU2VydmljZSBSZWNvcmRlcghDYWxlbmRhcgpBY2NlbGlQTEFOFQYNVGFrZSBtZSB0by4uLg5RdWljayBSZWNvcmRlchFTZXJ2aWNlIFNjaGVkdWxlchdTaW5nbGUgU2VydmljZSBSZWNvcmRlcghDYWxlbmRhcgpBY2NlbGlQTEFOFCsDBmdnZ2dnZ2RkAg8PZBYEAgIPDxYCHgdWaXNpYmxlaGRkAgQPZBYCZg8PFgQeCENzc0NsYXNzBTN1aS1kaWFsb2cgdWktd2lkZ2V0IHVpLXdpZGdldC1jb250ZW50IHVpLWNvcm5lci1hbGweBF8hU0ICAmQWAmYPZBYCZg9kFgRmDxYCHgVjbGFzcwVEdWktZGlhbG9nLXRpdGxlYmFyIHVpLXdpZGdldC1oZWFkZXIgdWktY29ybmVyLWFsbCB1aS1oZWxwZXItY2xlYXJmaXgWBGYPFgQeCWlubmVyaHRtbAUUQ3JlZGVudGlhbHMgUmVtaW5kZXIfBgUPdWktZGlhbG9nLXRpdGxlZAIBDxYCHwYFJnVpLWRpYWxvZy10aXRsZWJhci1jbG9zZSB1aS1jb3JuZXItYWxsFgJmDxYCHwYFGnVpLWljb24gdWktaWNvbi1jbG9zZXRoaWNrZAIBDxYCHwYFI3VpLWRpYWxvZy1jb250ZW50IHVpLXdpZGdldC1jb250ZW50ZAIEDxYCHgRUZXh0Bb8BWW91IGNhbiBub3cgbW9uaXRvciB5b3VyIHN0dWRlbnQncyBJRVAgY29tcGxpYW5jZSBpbiByZWFsIHRpbWUuIEEgPHN0cm9uZz5QcmVzY3JpYmVkIHZzLiBEZWxpdmVyZWQ8L3N0cm9uZz4gcmVwb3J0IGlzIG5vdyBhdmFpbGFibGUgZm9yIHByb3ZpZGVycyB1bmRlciBTdHVkZW50IFJlcG9ydHMgaW4gdGhlIFJlcG9ydHMgc2VjdGlvbi5kAgUPZBYCAgIPDxYCHwgFEFZlcnNpb24gMi4yLjMyLjdkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUmY3RsMDAkcGxjQ29udGVudCRMb2dpbkNvbnRyb2wkbG5rTG9naW5HW+gFfDapaOj7vMy3Gy9NoU+T+g==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmMain'];
+if (!theForm) {
+    theForm = document.frmMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=ageyVNSztu9arLhAdwVgyHkxCA0eSCRsxhX03c3nHqSpWnZ_XOl0UB1iitueK-rTi3EgaJQBzO6eOMuPCo-4_bYo5GM1&amp;t=635586505120000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=ojXFTSL8gSD9_DJ5H1ZBqJ1JgmV94FltN1D3hTuxQb-vC0FU_eESG_We7IkY46jXHHyutMJGIE049xT76LURSzrmyloFBvYwb0tKgzJjpQIDjyMEuRrXF3_BE8nzAxQGC4dMbQqHLGwGeOiosEZJSPdYFPQpFllm73KedbhQ_ciNBHqX0&amp;t=ffffffffc653d564" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=N3FpMTSanOZlc69v8gfgnKVHTb24I1sLeFP88A0oTgG0TxUkwGJPiEqPOyOuUFa7FuLmrNAtzxSJU8c40Qeb_ga9w5wz3qESVadfFloLCMNIIOb11FMJhtEZGExaiOm-Cx7bjBw6iCliR5_s4a7sAncE9co1&amp;t=5303ace5" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(function($) {
+                        $('#plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_ctl08').live('mouseover', function() { $(this).addClass('ui-state-hover'); });
+                        $('#plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_ctl08').live('mouseout', function() { $(this).removeClass('ui-state-hover'); });
+                    });//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=iEf2ag3NLqIZQpOLqP-jU4yVNeI9GwAl918POqm7CISuZwsHl_qBXmvINBBdGlh_PE8gqeSG5_RbxRgUa1Tgm0VtSYadTlhAxKsbmRcyO9VWgZkznmSPlMBx1N2OPYDTpldHKSmqHOZ1ei8mJvq466lddFdMdJ92yEi71ZgBbYZj-Ig60&amp;t=7b689585" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=rWS6GFBJ-zBA-Y2KKI3W8xKZd_ajLJs-CU5ASZGA7LAQniCInft4n46Xb9BDYRcuvCqCoOiPvB692h_EBxEJMeEC-rvTrVbm8bqGTAzOLDT-EEgIJRvxXbzvmUcTxG_hEkmnH-ubGLbfN7EClaHalvm-A_IwDpCFARpnnMbI-WW7PeSt0&amp;t=7b689585" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LnL70yXO1LUs-6GG_LuqzxvaidzuMVpEH-mBEye5seRNb-WPv_7pxcVv7MMu9pEnFlvCMvP6Q2fROWbPLLgCvjxH1fVN1ogpTe_GNcYWYPxvutA_UCCfOfKvWLmk0V1qQQ-Mm0XVtGi1vp7tYlgirYvije-SjYmgF3IKqd4IiyyOUpJALZoqpjq_qmno99BEVmzzUw7hhhtXof4kWcp8J6WKTBTLqkV8olYZiECOXnYpJqB5KluyZrr9fI0GuYhfI9P3BRTCFtIDhrCaw4phqPQ_6FoVJTjZflimKhbJaj7Jqb8ST4F6iMci7RY3HjkAZT3OYXNbOBmKBXBVvuQhdNNRELkrMG23eBOgSHhiN273zusvKrVUtOEtajgqEXgJtTATTKGkQsC4g4rO-DP3_RUzllH1xR7uHCtT2Rc2Do1cO7nOk8W-mwsjVXUjqTg9gsbN_Q2QLwBngpOL6_gLsjGqsVs5blphjDoW9w7dVfPkFNyM1mf4t9PNyEQCzc08n8PfXMw6zeIsqWy8IFOZWW2OAuxI6G1zs57J3x9Z8qwTt_w-XKh9rFFGT6kjzcFM9IcFuiEnrz2Kq6VvMFNPh3Kx7sX6DjTlwQsxCfHv4ieom9aCezyEUnb-mq-USHerg79Wa78ttCP2g5GKvIJW4w3OUFymsM4O51sLJsnlH5DkcLWAGhaPZk5lxKwy6Jx-BKKoBg2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABBAQae7PXeprA4sQj/UNtKNgGlSCsQHaxLfu/PsR1QMK7yYA++x6p8Pg+dP/+t/LyEvX+sEkP5G0S7mNnUbw3PgpSMDiLw4mGmCHo7loBUrGV2qXOckYVt2cVZupGOtTRUfgWfTfWgbncVB/H/da22hxx0YzPgKfrZi9t7X3B/EAh/f0027AmA3ONUhdkc2lCUU7pH3hm5aXjh2R2StsNagFG48nznlD9NCgp77k/1sB4WgIsnra06LQ7BjfWr6RHrwLUhILsabz9/hH0/btYlkPOnuEGyrNUD0I31ccHt17nTNn2aHANCc9J9G8Mmk+TJuQjcFAmiUiQwc8G2cJEJifOTgn0XIQslroKQdzMOXbxUNfIQ=">
+</div>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scriptManager', 'frmMain', ['tctl00$plcContent$LoginControl$ctlCredentialsReminder$pnlCredentialsReminder$pnlModalPopupAjax','plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_pnlModalPopupAjax'], [], [], 3600, 'ctl00');
+//]]>
+</script>
+
+		<script type="text/javascript">
+			$(document).ajaxComplete(function (event, xhr, settings) {
+				SessionCounterManager.Register(240);
+			});
+			$(document).ajaxStart(function () {
+				SessionCounterManager.Check();
+			});
+
+			Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+			function EndRequestHandler(sender, args) {
+				var error = args.get_error();
+				if (error) {
+					args.set_errorHandled(true);
+					var message = '';
+					for (var errorMember in error) {
+						message += '\t' + errorMember + ':' + error[errorMember] + '\n';
+					}
+
+					ErrorManager(GetCurrentUrl() + "/WebServicesPublic.asmx/LogJavaScriptError")
+						.SendError(message, "", "");
+				}
+			}
+
+			function InitializeErrorManager() {
+				ErrorManager(GetCurrentUrl() + "/WebServicesPublic.asmx/LogJavaScriptError").Initialize();
+			}
+			
+			function GetCurrentUrl() {
+				return $(location).prop("protocol") + "//" + $(location).prop("host");
+			}
+
+			InitializeErrorManager();
+		</script>
+
+		
+	<div class="wrap">
+		<div class="header-panel">
+			<div class="login-header-left">
+				<img id="plcContent_imgAcceliTrackLogo" src="App_Themes/Default/Images/logo-acceli-track.png" alt="AcceliTRACK" style="border-width:0px;">
+			</div>
+			<div class="login-header-right" align="right">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tbody><tr>
+						<td class="login-grey bold">Call us (888)523-6107
+						</td>
+						<td class="login-blue bold">
+							<a href="mailto:VAHelp@accelify.com">VAHelp@accelify.com</a>
+						</td>
+						<td>
+							<a onclick="OpenLiveChat(); return false;" id="plcContent_lnkLiveChat" href="javascript:__doPostBack('ctl00$plcContent$lnkLiveChat','')"><img id="plcContent_imgLiveChat" title="Live Chat" src="App_Themes/Default/Images/btn-live-chat.png" style="border-width:0px;"></a>
+						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+
+		<table id="plcContent_LoginControl" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+	<tbody><tr>
+		<td>
+				<div id="plcContent_LoginControl_pnlLogin" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'plcContent_LoginControl_lnkLogin')">
+			
+					<div class="login-main">
+						<span class="login-main-span">Sign In</span>
+						<div id="signIn">
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tbody><tr align="left">
+									<td>
+										<input name="ctl00$plcContent$LoginControl$UserName" type="text" maxlength="50" id="plcContent_LoginControl_UserName" class="login-enter enter" placeholder="Username" style="height: 34px; width: 230px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+									</td>
+									<td style="width: 10px">
+										<span id="plcContent_LoginControl_vldUserName" title="Username is a required field." style="color:Red;display:none;">*</span>
+									</td>
+									<td>
+										<input name="ctl00$plcContent$LoginControl$Password" type="password" maxlength="50" id="plcContent_LoginControl_Password" class="login-enter enter" onkeypress="Utils.ShowCapsLockTooltip(event, this)" placeholder="Password" style="height: 34px; width: 230px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+									</td>
+									<td style="width: 10px">
+										<span id="plcContent_LoginControl_vldPassword" title="Password is a required field." style="color:Red;display:none;">*</span>
+									</td>
+									<td class="login-quick-links">
+										<select name="ctl00$plcContent$LoginControl$lstQuickAccessLinks" id="plcContent_LoginControl_lstQuickAccessLinks" style="height:39px;width:175px;">
+				<option value="Take me to...">Take me to...</option>
+				<option value="Quick Recorder">Quick Recorder</option>
+				<option value="Service Scheduler">Service Scheduler</option>
+				<option value="Single Service Recorder">Single Service Recorder</option>
+				<option value="Calendar">Calendar</option>
+				<option value="AcceliPLAN">AcceliPLAN</option>
+
+			</select>
+									</td>
+									<td style="width: 7px"></td>
+									<td>
+										
+										<input type="image" name="ctl00$plcContent$LoginControl$lnkLogin" id="plcContent_LoginControl_lnkLogin" title="Login" class="login-img" src="App_Themes/Default/Images/ui-login_button.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$plcContent$LoginControl$lnkLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" style="border-width:0px;">
+									</td>
+								</tr>
+								<tr align="center">
+									<td colspan="4" class="login-m10">
+										<div id="plcContent_LoginControl_ctlCredentialsReminder_pnlPasswordReminder">
+				
+	<a id="plcContent_LoginControl_ctlCredentialsReminder_lnkPasswordReminder" class="login-main-link" href="javascript:__doPostBack('ctl00$plcContent$LoginControl$ctlCredentialsReminder$lnkPasswordReminder','')">Forgot your password?</a>
+
+			</div>
+
+
+
+<div style="text-align: left;">
+	<div id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder">
+				<div id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_pnlModalPopup" class="ui-dialog ui-widget ui-widget-content ui-corner-all" style="display:none;">
+					<div id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_pnlModalPopupAjax">
+						<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title">Credentials Reminder</span><a id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_ctl08" onclick="$.modal.close();
+                    HideTooltips(); return false;" class="ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><div>
+			<table cellpadding="0" cellspacing="0" border="0" class="form-table">
+				<tbody><tr id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_rowUserName">
+							<td style="width: 100px;">Username:<span class="txt-mark">*</span></td>
+							<td>
+						<input name="ctl00$plcContent$LoginControl$ctlCredentialsReminder$pnlCredentialsReminder$txtUserName" type="text" maxlength="50" id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName" class="enter" style="width: 150px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off"><span id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField" title="Username is a required field." style="color:Red;display:none;"> *</span>
+					</td>
+						</tr>
+						
+				<tr>
+					<td style="width: 100px;">Email:<span class="txt-mark">*</span></td>
+					<td>
+						<input name="ctl00$plcContent$LoginControl$ctlCredentialsReminder$pnlCredentialsReminder$txtEmail" type="text" maxlength="50" id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail" class="enter" style="width: 150px; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off"><span id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField" title="E-mail is a required field." style="color:Red;display:none;"> *</span><span id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression" title="E-mail has invalid format." style="color:Red;display:none;"> *</span>
+					</td>
+				</tr>
+			</tbody></table>
+		</div><div class="button-panel"><div style="display:inline;">
+			<a id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_btnSend" class="button-blue" href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$plcContent$LoginControl$ctlCredentialsReminder$pnlCredentialsReminder$btnSend", "", true, "CredentialsReminder", "", false, true))'>Send</a>
+		</div><a onclick="$.modal.close();
+                    HideTooltips(); return false;" id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_btnCancel" class="button-blue" href="javascript:__doPostBack('ctl00$plcContent$LoginControl$ctlCredentialsReminder$pnlCredentialsReminder$btnCancel','')">Close</a></div><div>
+			<span id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_lblReminderError" class="validator"></span>
+			<span id="plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_lblReminderSuccess"></span>
+		</div></div>
+					</div>
+				</div>
+			</div>
+</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="5" align="left">
+										
+									</td>
+								</tr>
+							</tbody></table>
+						</div>
+					</div>
+				
+		</div>
+			</td>
+	</tr>
+</tbody></table>
+		
+		<div class="social-icons center">
+			<table>
+				<tbody><tr>
+					<td>
+						<div class="text">	
+							For more of What's New follow us!
+						</div>
+					</td>
+					<td>
+						<a href="https://www.facebook.com/pages/Accelify/207591305948728?ref=br_tf&amp;id=207591305948728&amp;sk=likes" target="_blank">
+							<img src="App_Themes/Default/Images/Facebook-Icon.png" alt="">
+						</a>
+					</td>
+					<td>
+						<a href="http://www.linkedin.com/company/accelify-llc" target="_blank">
+							<img src="App_Themes/Default/Images/Linked-In-Icon.png" alt="">
+						</a>
+					</td>
+					<td>
+						<a href="https://twitter.com/AccelifyLLC" target="_blank">
+							<img src="App_Themes/Default/Images/Twitter-Icon.png" alt="">
+						</a>
+					</td>
+					<td>
+						<a href="http://blog.accelify.com/" target="_blank">
+							<img src="App_Themes/Default/Images/Blog-Icon.png" alt="">
+						</a>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="login-center">
+			<img id="plcContent_imgSslCertificate" src="App_Themes/Default/Images/ui-login_whats_new.png" align="right" style="border-width:0px;">
+			<div class="whats_up">What's New.</div>
+			<div class="under-whatsup">
+				You can now monitor your student's IEP compliance in real time. A <strong>Prescribed vs. Delivered</strong> report is now available for providers under Student Reports in the Reports section.
+			</div>
+		</div>
+
+		
+
+<div class="footer" id="Footer">
+	<img id="plcContent_ctlPageFooter_imgSslCertificate" src="App_Themes/Default/Images/ssl-certificate.gif" align="right" style="border-width:0px;">
+	<div class="footer-body">
+		<div class="footer-links">
+			<a href="http://accelify.com/" class="footerLink" target="_blank">Home</a>
+			<a href="http://accelify.com/Home/AboutUs" class="footerLink" target="_blank">About Us</a>
+			<a href="http://accelify.com/Services/Solutions" class="footerLink" target="_blank">Services</a>
+			<a href="http://accelify.com/Home/Testimonials" class="footerLink" target="_blank">Testimonials</a>
+			<a href="http://accelify.com/Home/NewsEvents" class="footerLink" target="_blank">Links</a>
+			<a href="http://accelify.com/Home/Faq" class="footerLink" target="_blank">Help</a>
+			<a href="http://accelify.com/Home/Contact" class="footerLink" target="_blank">Contact</a>
+		</div>
+		<div class="footer-cory-right">
+			<div>
+				<span>
+					Copyright © 2016 Accelify. All Rights Reserved.
+				</span>
+			</div>
+			<img id="plcContent_ctlPageFooter_Image1" src="App_Themes/Default/Images/logo-accelify.png" align="right" style="border-width:0px;">
+		</div>
+		<div class="footer-version">
+			<span id="plcContent_ctlPageFooter_lblVersion" class="version">Version 2.2.32.7</span>
+		</div>
+	</div>
+</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			if (navigator.appVersion.indexOf("MSIE 9") != -1 || navigator.appVersion.indexOf("MSIE 8") != -1) {
+				$("input.login-enter").each(function (index, element) {
+					var currentInput = $(element);
+
+					var placeAttr = $(element).attr('placeholder');
+					var label = $("<span class='login-span-placeholder'></span>").appendTo($(element).parent());
+					label.text(placeAttr);
+
+					if (currentInput.val().length != 0)
+						label.hide();
+
+					label.focus(function () {
+						currentInput.focus();
+					});
+
+					currentInput.focus(function () {
+						label.hide();
+					});
+					currentInput.blur(function () {
+						if (currentInput.val().length == 0)
+							label.show();
+					});
+				});
+			}
+		});
+	</script>
+
+
+		
+
+<script type="text/javascript">
+	/* This method is identical to the method in the MS javascript lib except that it adds a click function to anchors in non-IE browsers */
+	var __defaultFired = false;
+	function WebForm_FireDefaultButton(event, target) {
+		var element = event.target || event.srcElement;
+		if (!__defaultFired && event.keyCode == 13 && !(element && (element.tagName.toLowerCase() == "textarea"))) {
+			var defaultButton;
+			if (__nonMSDOMBrowser) {
+				defaultButton = document.getElementById(target);
+			} else {
+				defaultButton = document.all[target];
+			}
+
+			/* This is the only addition to this method, the rest is identical to MS version.*/
+			if (defaultButton && typeof (defaultButton.click) == "undefined") {
+				defaultButton.click = function() {
+					var result = true;
+					if (defaultButton.onclick)
+						result = b.onclick();
+					if (typeof (result) == "undefined" || result)
+						eval(unescape(defaultButton.href.substr(11)));
+				};
+			}
+
+			if (defaultButton && typeof (defaultButton.click) != "undefined") {
+				defaultButton.click();
+				event.cancelBubble = true;
+				if (event.stopPropagation) event.stopPropagation();
+				return false;
+			}
+		}
+		return true;
+	}
+</script>
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("plcContent_LoginControl_vldUserName"), document.getElementById("plcContent_LoginControl_vldPassword"), document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField"), document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField"), document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var plcContent_LoginControl_vldUserName = document.all ? document.all["plcContent_LoginControl_vldUserName"] : document.getElementById("plcContent_LoginControl_vldUserName");
+plcContent_LoginControl_vldUserName.controltovalidate = "plcContent_LoginControl_UserName";
+plcContent_LoginControl_vldUserName.focusOnError = "t";
+plcContent_LoginControl_vldUserName.errormessage = "Username is a required field.";
+plcContent_LoginControl_vldUserName.display = "Dynamic";
+plcContent_LoginControl_vldUserName.validationGroup = "Login";
+plcContent_LoginControl_vldUserName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+plcContent_LoginControl_vldUserName.initialvalue = "";
+var plcContent_LoginControl_vldPassword = document.all ? document.all["plcContent_LoginControl_vldPassword"] : document.getElementById("plcContent_LoginControl_vldPassword");
+plcContent_LoginControl_vldPassword.controltovalidate = "plcContent_LoginControl_Password";
+plcContent_LoginControl_vldPassword.focusOnError = "t";
+plcContent_LoginControl_vldPassword.errormessage = "Password is a required field.";
+plcContent_LoginControl_vldPassword.display = "Dynamic";
+plcContent_LoginControl_vldPassword.validationGroup = "Login";
+plcContent_LoginControl_vldPassword.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+plcContent_LoginControl_vldPassword.initialvalue = "";
+var plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField = document.all ? document.all["plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField"] : document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField");
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.controltovalidate = "plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.focusOnError = "t";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.errormessage = "Username is a required field.";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.display = "Dynamic";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.validationGroup = "CredentialsReminder";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField.initialvalue = "";
+var plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField = document.all ? document.all["plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField"] : document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField");
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.controltovalidate = "plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.focusOnError = "t";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.errormessage = "E-mail is a required field.";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.display = "Dynamic";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.validationGroup = "CredentialsReminder";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField.initialvalue = "";
+var plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression = document.all ? document.all["plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression"] : document.getElementById("plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression");
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.controltovalidate = "plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.focusOnError = "t";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.errormessage = "E-mail has invalid format.";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.display = "Dynamic";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.validationGroup = "CredentialsReminder";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression.validationexpression = "^([\\w-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([\\w-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('plcContent_LoginControl_vldUserName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('plcContent_LoginControl_vldUserName'));
+}
+
+document.getElementById('plcContent_LoginControl_vldPassword').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('plcContent_LoginControl_vldPassword'));
+}
+
+document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtUserName_vldRequiredField'));
+}
+
+document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRequiredField'));
+}
+
+document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('plcContent_LoginControl_ctlCredentialsReminder_pnlCredentialsReminder_txtEmail_vldRegularExpression'));
+}
+//]]>
+</script>
+</form>
+
+<script type="text/javascript" src="chrome-extension://pncoonbpgmlbbjnnmaindchmjckkjcdb/contentProcessor.js"></script><div id="extension-is-installed"></div><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script></body><template id="transover-popup-template">
+  <style>
+    .pos_translation {
+      padding-bottom: 4px;
+    }
+
+    .rtl {
+      direction: rtl;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 7px 9px 3px 9px;
+      position: fixed;
+      z-index: 2147483647;
+      top: -1500px;
+      left: 0;
+      box-sizing: content-box;
+    }
+  </style>
+
+  <main></main>
+</template><template id="transover-tat-popup-template">
+  <style>
+    #tat_input_container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    #tat_input_container label {
+      line-height: 26px;
+    }
+
+    #tat_input {
+      margin-left: 5px;
+      flex-grow: 2;
+      font-size: 15px;
+      line-height: 20px;
+      border-radius: 2px;
+      border: 1px #ccc solid;
+      padding-left: 5px;
+    }
+
+    #tat_submit_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #tat_submit_container select {
+      margin-left: 5px;
+    }
+
+    #tat_submit {
+      width: 45px;
+      margin-left: 5px;
+    }
+
+    #tat_to_lang {
+      width: 150px;
+    }
+
+    #swap_languages {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEKElEQVR4nL1Vb0xbVRQ/97Xre23pn9FSNmBQGEqGMJQPIyU6MkMczf6gbAyNk5lo9gkTdTPGLPswzRITjcYPftREiYQ/g5EVZZEwNt3ELBmiI/wLqB1rFdaWDaSjfe+e44cHpUAL0URPcnPuu/e887vn3PM7F+A/Fs1mBi+fbNBXPHNgv6ShCa/X+48BhI02T7522lbmrrtsTct8RRCETQ+TSLTJNhreOuvcXXG4y2C1F874vL25BcWP5hWWKgQEAABKNBJZmAvNzIaCi1d6vqVkfliixdfPnH+8eO9BzxaDKQuRgCMRR2KcYhoQgaKRh/PBO+O90yM/fhTy/faD51InrvW1LuzT5z6sLKo4/LVGZ3AoSMARQEEChYgpSKAgMa5qQKaRREvaLmteST0jlHIc5usjw8M8KUBN3Yu2soP1fYLOkLrkDJadxb5pWQMgESASIDHBsC3vSR4Ja3fYUq6OjY1SQoBUq3kxHPT/lJpdUAVaMYUjMQWJKbR8clA1qWniBAyJGKpgTHLklC3cHb469POANyHA1NQUDN66+atNxCuWjJ2VgmhUI+EICkfkiKQOIiRgSKDexxIAAtMQoikjRbg4Pj6OAEmq6KsvPhuok6P7H3n6+ZaUdGep/5fv+vyDfe8AQCy/Wslo3+567n3Rnl1CKgAhEOgceeU6UbQCQCApAABAS1PjZC2XD2S7qr9EpPCD+7MDPT09SrzNcYNFdpQfuUgEAhIBEQAJGpEBmDcFAABoa2mePopYK5pt+2RZXleCi0HftTueTx4jIi1jasUTESHiH8s2MR68cea9Ap1kLCHVCJAAwnOh6ZnfR79vb29f5fzZupcMzpLyd32D1862tTY/3OiQsQiMVvuhQlfVB5xWiPUgOO0LTE3sAQD/qr+4rE0v2vsm0xmdxwTh1dbmpvubAoT+nLotq45haZBoScsorjrRkbn7qTZgQjSWZ0JJQYKtO5+oYaIx7ZigeaG1qdGfCCCWopqjtcZ99W+P64yWDI5EnFTGokou4kgMCUite4L4eTjgG/Jfv1Db3Pj56FqAGA9Ghofl/DynvDV7l3ulJQAotBRRHKEwvvaJQCOZ0vQZ+dW5Nn3/0OCtuwkBAAC228yDW/TGfL0ts4gvMZivtIV49sJaMNLqTJGQb36bReqdnJxM3CrGRkd5ulFzWYkuSnr7jlICjSbOGSzPOREgrKwpclS+13/h47Bv7LzH41lVVQnbtdvt1phT7SXWnKLjkj1rj6DTpxKBQKS+BgRMEB25+UjElMW/Fu7daD0XCfk/7ejoCCe95ETicrmYyWQSRVHUQdzrJ6WYTVmHTnmj88HZwI2WU5G5QFNnZ2c0kY8NAZKJu/qI2Vl54nawv60hPDf7TVdXF09m+6/eWafTyWlm4tLcbOBmd3f3uhbyv8rfG8mfJ968lFgAAAAASUVORK5CYII=);
+      cursor: pointer;
+    }
+
+    #swap_languages.disabled {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEIklEQVR4nL1VX0hbVxj/7k0w6TS3QVck+qC2/tfhiMyRUR8GlU4XNzJYsFBUluXBh/Uho0PBPWww6TbEpzGz+pKBC2OS2tkHRbQd3ZiIdkoVghptdO2MRmP+3Xtzb+759nBNFl0S8WH7weF+nO+7v985h/P7DsB/DMVZBTab7YLJZLouCMKG1+s9twCdLdnf31/Q09MzWVZWZqFp+szFpIMyU2JgYKC0s7Pzga6oqHZ9fX2msbGx0mAwxBN5juNi+/v7e36/n5+cnMRzqQ4NDb3q9/t3JEnCuCRhPB4noiiiIIgkJggYi8WQ53lycHgYnJmddfX29l41mUxZTyMJu91+LRKJBCSZGEVRREEUiSATE57nkeM4ZFmWRKNRjEQieHQUFO+OjAyYzWbVab4T59rd3V1gs9ke5ubm5iMAACJgckBKfHIAIF1TW3s1HAopc3JyHrndbkwrkJeXx29sbPyh1+vfuqBW5yEChYDUMVHql0LyT0wQAZFQlZVVry8sLDxaXFzwphXY3t6Gubm5zXA4PFtXV3eNYZh8RASJEJDiEiESQXlIeCxMISIQJICIFEVRCkmSNKIo3FtbWyMAGW6R3W5/wvP89Y9u3fqxprpG/2Bi4qHL5eoDAClRwzDMyxaL5U55RWUDIgEkiAQRqqqr31CpVFoA8GcUAABwOBweQRDetlgs30uEsIFA4Mn09HQ8tSY/v0C0Wq33CCItHx8BhUKhAgDmTAEAAKfT6ZMk6X2dTvemKIrkdP7Zs61f+vp66xBRSVEUAAAgIhJC/krUUIlgcHCwimGYBvlWyNjb2/MtLS09HhsbO0H+gcXyUktLy+c/37//qdPp5LItMrkDnU7X3tHR8fWxACIitbOz83xlZaUJAF6k/hTjeeU77e02RqMppWn6w9HR0aMzBTwez1OUAQmN4uLiotu3P3EZjcafaJoWjueBEKImBKG5ufk9jUZzSalU3nA4HC8yiQAAgNlszt3d3X0utwSByO0ghhzHI8txJMqyGIlESTgcwVAojMFgiBwdBfEwEMCFxcWnVqu1Oh1v0gerq6tiSUmJqG9sbEXZtgljATltNJKcpxAJXGQuXqqvf+VdmqZ/n5+f/zOtAACAWq1eYhim/HJZWT1mEiAJc8nuRSLHOSqVZmtrM6xUKmc8Hk/6VuF2uyVBECZZllWXV1ToFbRCkeJUOBZIkCdjnuPEkbvfDS0vL38xMTFx4lZRkAatra2KwsLChteamm5euXylSW5+CTMhUEDRVdVV5YQgFQoGo8P24c+2vd5vXC4Xe5orrUACBoOB0mg0KpVKlQMpr59Wq9Xc+fIrr8/nC9iHv/3Y5/P9MD4+LmTjOhfMZjPz+NffvF1dXe1GozHrU5p1B5nQ1tam1Gq1pQcHB5tTU1P/aiH/K/4G7RvFhRjTPe0AAAAASUVORK5CYII=);
+      cursor: auto;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      width: 420px;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 10px 10px 8px 10px;
+      position: fixed;
+      z-index: 2147483647;
+      top: 15px;
+      right: 15px;
+    }
+  </style>
+
+  <main>
+    <div id="tat_input_container">
+      <label for="tat_from_lang">Translate</label>
+      <input id="tat_input" type="text">
+    </div>
+    <div id="tat_submit_container">
+      <label for="tat_from_lang">from</label>
+      <select id="tat_from_lang"></select>
+
+      <div id="swap_languages"></div>
+
+      <label for="tat_to_lang">into</label>
+      <select id="tat_to_lang"></select>
+
+      <input type="submit" id="tat_submit" value="go">
+    </div>
+  </main>
+</template></html>

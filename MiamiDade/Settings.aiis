@@ -150,7 +150,7 @@
       }
     },
     "UnitTypeTypeGeneration": 1,
-    "RecorderBaseUrl": "",
+    "RecorderBaseUrl": "http://miami.acceliqc.com/",
     "IsStoryBoardCapturingEnabled": true,
     "SimulateRealClickByDefault": false,
     "SimulateRealTypingByDefault": false,
@@ -181,7 +181,7 @@
     "ProjectGuid": "aa111da7-2e74-4d70-9ee0-e3a3a9ddc81e",
     "SourceControlRepository": null,
     "IsOnline": false,
-    "ProjectLanguage": 2,
+    "ProjectLanguage": 1,
     "ProjectReferences": [
       "System",
       "System.Core",
@@ -192,8 +192,8 @@
       "Telerik.WebAii.Controls.Xaml.Wpf, Version=2016.1.330.0, Culture=neutral, PublicKeyToken=528163f3e645de45",
       "Telerik.TestingFramework.Controls.KendoUI, Version=2016.1.330.0, Culture=neutral, PublicKeyToken=528163f3e645de45"
     ],
-    "ScheduleServerUrl": "http://localhost:8009",
-    "IsScheduleServerRemote": false,
+    "ScheduleServerUrl": "http://volf:8009/",
+    "IsScheduleServerRemote": true,
     "ProjectVersion": "2016.1.321.0",
     "Namespace": "MiamiDade",
     "AssemblyName": "MiamiDade",

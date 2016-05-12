@@ -1,0 +1,979 @@
+<html class="k-webkit k-webkit50"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Accelify - ANGEL ABREU</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="/IEP/Content/Images/favicon.ico">
+    <link href="/IEP/Content/kendo/2015.3.1002/kendo.common.css" rel="stylesheet">
+<link href="/IEP/Content/kendo/2015.3.1002/kendo.silver.css" rel="stylesheet">
+
+    <link href="/IEP/Content/accelify.hampton.iep/accelify.hampton.iep.formBuilder.css" rel="stylesheet">
+<link href="/IEP/Content/accelify.hampton.iep/accelify.hampton.iep.kendo.css" rel="stylesheet">
+<link href="/IEP/Content/accelify.hampton.iep/accelify.hampton.iep.reset.css" rel="stylesheet">
+<link href="/IEP/Content/accelify.hampton.iep/accelify.hampton.iep.styles.css" rel="stylesheet">
+<link href="/IEP/Content/mCustomScrollbar/mCustomScrollbar.css" rel="stylesheet">
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/IEP/Scripts/jquery-2.0.3.min.js"></script><style type="text/css"></style>
+<script src="/IEP/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="/IEP/Scripts/jquery.autogrow.js"></script>
+<script src="/IEP/Scripts/jquery.blockUI.min.js"></script>
+<script src="/IEP/Scripts/jquery.cookie.js"></script>
+<script src="/IEP/Scripts/jquery.are-you-sure.js"></script>
+<script src="/IEP/Scripts/jquery.json-2.4.min.js"></script>
+<script src="/IEP/Scripts/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="/IEP/Scripts/angular.min.js"></script>
+<script src="/IEP/Scripts/kendo/2015.3.1002/kendo.all.min.js"></script>
+<script src="/IEP/Scripts/kendo/2015.3.1002/kendo.timezones.min.js"></script>
+<script src="/IEP/Scripts/FusionCharts/FusionCharts.js"></script><style type="text/css" media="screen">object.FusionCharts:focus, embed.FusionCharts:focus {outline: none}</style>
+<script src="/IEP/Scripts/FusionCharts/FusionCharts.HC.js"></script>
+<script src="/IEP/Scripts/FusionCharts/FusionCharts.HC.Charts.js"></script>
+<script src="/IEP/Scripts/FusionCharts/FusionCharts.HC.PowerCharts.js"></script>
+<script src="/IEP/Scripts/FusionCharts/FusionChartsExportComponent.js"></script>
+<script src="/IEP/Scripts/jquery.mousewheel.min.js"></script>
+<script src="/IEP/Scripts/jquery.mCustomScrollbar.min.js"></script>
+<script src="/IEP/Scripts/jszip.min.js"></script>
+
+    <script src="/IEP/Scripts/accelify.hampton.iep/accefily.hampton.iep.fieldBehaviorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.ajaxManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.concurrencyManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.controlsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.errorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.messageBoxManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.selectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/accelify.hampton.iep.userMultiSelectManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.assessmentsAccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.attendingPersonMAnager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.broward504PlanAccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.calendarManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.caseloadManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.contactHistoryManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.contactNoteManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.controlStateManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.disabilityManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.distributionListManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.eseTeamManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.esyGoalManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.evaluationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.eventAttachmentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.eventDetails.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.eventManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.eventsDueMonthChartManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.exceptionalityManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.extensions.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.formManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.formValidationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.goalManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.homeManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.IFSPDataForm.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.lreManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.matrixOfServicesManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.matrixOfServicesSpecialConsiderationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.medicationServiceManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.messageManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.miami504AccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.miamiSection504EligibilityDeterminationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.notificationOfPlacementManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.progressReportManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.rejectedOptionsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.section504ADACodesAndDataEntryManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.section504EligibilityDeterminationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.section504PlanAccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.serviceGroupManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.serviceManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentAccommodationAssessmentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentAssessmentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentAttachmentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentDetails.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentEvaluationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentInformationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentPlanChartManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/accelify.hampton.iep.studentSection504PlanAccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.alertDefinitionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.announcementManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.cacheManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.caseloadManagerAdmin.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.evaluationLookupTypeManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventDefinitionAttachmentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventDependencyChainManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventDependencyManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventLogManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventSectionDependencyManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.eventSectionMigrationDependencyManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.exportManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.formDefinitionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.formFieldDefinitionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.lookupTypeManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.lookupValueManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.permissionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.settingManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.studentEvaluationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.studentImportManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.studentInformationManagerAdmin.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.userAccessManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Administration/accelify.hampton.iep.userManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/FormBuilder/accelify.hampton.iep.angular.formBuilderAppElementSelectionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/FormBuilder/accelify.hampton.iep.angular.formBuilderModule.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/FormBuilder/accelify.hampton.iep.angular.formBuilderStateManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/FormBuilder/accelify.hampton.iep.angular.formBuilderTemplatesManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/FormBuilder/accelify.hampton.iep.builtFormsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.baseSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.distributeToSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.eseTeamSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.eventAvailableFormsSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.eventDistributionManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.eventFormsPackagesSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.otherFormsSelectorSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.studentContactSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/DistributionManager/accelify.hampton.iep.userSelectorManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.broward.504.reportAccommodationByStudentsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.broward504.report504EventAttendanceByPerson.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.504.reportStudentsByAccommodationManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.customReportManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportBuilder.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportBuilderColumn.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportBuilderCondition.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportBuilderFormItem.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportEventDueManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportEventQuantityManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportEventsByStudentManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportIndicator10Manager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportIndicator9Manager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportPreviewManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportsDashboardManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportStudentDisabilityManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportStudentServicesManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Views/Reports/accelify.hampton.iep.reportTransportationAccommodationsManager.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/FormFieldBehaviors/accefily.hampton.iep.prefillFieldBehavior.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/FormFieldBehaviors/accelify.hampton.iep.atLeastOneOfTheGroupRequiredBehavior.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/FormFieldBehaviors/accelify.hampton.iep.checkboxBehavior.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/FormFieldBehaviors/accelify.hampton.iep.initiallyRequiredGroupBehavior.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/FormFieldBehaviors/accelify.hampton.iep.lookupBehavior.js"></script>
+<script src="/IEP/Scripts/accelify.hampton.iep/Kendo%20UI%20Extensions/accelify.hampton.iep.maskedTextboxExt.js"></script>
+
+<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/tat_popup.js" async=""></script></head>
+<body>
+    <script type="text/javascript">
+        var AjaxManager;
+        var ControlsManager;
+        var SelectorManager;
+        var UserMultiSelectManager;
+        var ErrorManager;
+        var MessageBoxManager;
+
+        jQuery(function() {
+            AjaxManager = new AjaxManager({
+                loginUrl: "/Login.aspx",
+                unauthorizedAjaxRequest: "Unauthorized AJAX Request",
+                statusCodeForbidden: 403
+                });
+            ControlsManager = new ControlsManager({
+                dateFormat: "M/d/yyyy",
+                timeFormat: "h:mm tt",
+                gridEmptyMessage: "No items to display"
+            });
+            SelectorManager = new SelectorManager({
+                currentUserId: "4780",
+                currentUserName: "Shum, Leo"
+            });
+            UserMultiSelectManager = new UserMultiSelectManager({
+                selectUserUrl: "/IEP/Selector/OpenUserSelector"
+            });
+            ErrorManager = new ErrorManager({
+                errorUrl: "/IEP/Error/LogJavaScriptError"
+            });
+            MessageBoxManager = new MessageBoxManager({
+                confirmMessage: "Changes were made. Do you want to save them?"
+            });
+        });
+    </script>
+
+    
+    
+
+
+    
+
+
+<div class="layout">
+    <div class="container">
+        <div>
+            <div class="header">
+
+
+<script type="text/javascript">
+    jQuery(function () {
+        var pnlLogo = $("#pnlLogo");
+        var pnlLogoMenu = $("#pnlLogoMenu");
+        pnlLogo.mouseover(function () { pnlLogoMenu.slideDown("fast"); });
+        pnlLogoMenu.mouseleave(function () { pnlLogoMenu.slideUp("fast"); });
+        ControlsManager.initializeKendoTooltip(
+            "#pnlSupport", {
+                autoHide: false,
+                showOn: "click",
+                position: "left",
+                content: "<div class='txt-l p5'>" +
+                    "<div>(888)523-6110</div>" +
+                    "<div class='mT5'><a href='mailto:BrowardHelp@accelify.com'>BrowardHelp@accelify.com</a></div>" +
+                    "</div>"
+            });
+    });
+</script>
+
+<div class="clearfix">
+    <div class="left">
+        <div id="pnlLogo" class="logo"></div>
+        <ul id="pnlLogoMenu" class="logo-menu">
+            <li class="logo-plan" title="AcceliPlan">
+                <a href="/IEP/"></a>
+            </li>
+            <li class="logo-track" title="AcceliTrack">
+                <a href="http://miami-demo.accelidemo.com"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul class="navigation">
+            <li>
+                <a href="/IEP/Messages"><span class="inbox"></span>Inbox</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><span class="live-chat"></span>Live Chat</a>
+            </li>
+            <li>
+                <a id="pnlSupport" href="javascript:void(0);" data-role="tooltip"><span class="support"></span>Support</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><span class="settings"></span>Settings</a>
+            </li>
+        </ul>
+        <div class="user">
+                <span>STATE OF FLORIDA</span>
+                <span>|</span>
+            <span>
+                Leo Shum
+                     Super Admin Plus 
+            </span>
+            <span><a href="/IEP/Account/Logout" class="logout">Logout</a></span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <div>
+            <div class="content">
+                <div>
+<script type="text/javascript">
+    jQuery(function() {
+        var pnlMenu = $("#pnlMenu");
+        ControlsManager.initializeKendoMenu(pnlMenu);
+        pnlMenu.css("display", "block");
+    });
+</script>
+
+<ul id="pnlMenu" style="display: block;" data-role="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal" tabindex="0" role="menubar">
+    <li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/" class="k-link">Home</a></li>
+    <li class="k-item k-state-default" role="menuitem"><a href="/IEP/Students" class="k-link">Students</a></li>
+    <li class="k-item k-state-default" role="menuitem"><span class="k-link">Caseload<span class="k-icon k-i-arrow-s"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Caseload/MyCaseload" class="k-link">My Caseload</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Watchlist/MyWatchlist" class="k-link">My Watchlist</a></li></ul></li>
+    <li class="k-item k-state-default" role="menuitem"><span class="k-link">Reports<span class="k-icon k-i-arrow-s"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Reports/ReportsDashboard" class="k-link">Reports Dashboard</a></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">Accommodation Reports<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first k-last" role="menuitem"><a href="/IEP/Reports/ReportStudentAccommodations" class="k-link">Hampton IEP: Student Accommodations</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">Student Reports<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first k-last" role="menuitem"><a href="/IEP/Reports/ReportStudentDetails" class="k-link">Student Details</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">Events Reports<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first k-last" role="menuitem"><a href="/IEP/Reports/ReportEventDue" class="k-link">Report Events Due</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Reports/ReportBuilder" class="k-link">Report Builder</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Reports/ReportManager" class="k-link">Report Manager</a></li></ul></li>
+    
+    <li class="k-item k-state-default" role="menuitem"><a href="/IEP/Messages" class="k-link">Inbox (<span id="lblInboxCount">0</span>)</a></li>
+    <li class="k-item k-state-default" role="menuitem"><span class="k-link">Administration<span class="k-icon k-i-arrow-s"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><span class="k-link">Caseload<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Administration/CaseloadManager" class="k-link">Caseload Manager</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Administration/WatchlistManager" class="k-link">Watchlist Manager</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/AnnouncementManager" class="k-link">Announcement Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/StudentInformationManager" class="k-link">Student Info Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/AlertDefinitionManager" class="k-link">Alert Manager</a></li><hr><li class="k-item k-state-default" role="menuitem"><span class="k-link">Forms <span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Administration/FormDefinitionManager" class="k-link">Form Definition Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/FormFieldDefinitionManager" class="k-link">Form Field Definition Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/EventDependency" class="k-link">Event Dependency Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/EventDependencyChain" class="k-link">Event Dependency Chain Manager</a></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">Event Section Dependency Manager<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Administration/EventSectionRequirementDependency" class="k-link">Event Section Requirement</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Administration/EventSectionMigrationDependency" class="k-link">Event Sections Copy On Lock</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/LookupTypeManager" class="k-link">Lookup Type Manager</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Administration/LookupValueManager" class="k-link">Lookup Value Manager</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">System<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Administration/StudentImport" class="k-link">Student Import</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/ExportManager" class="k-link">Export Manager</a></li><hr><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/ServiceGroupManager" class="k-link">Service Group Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/SettingsManager" class="k-link">Settings Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/EventLogManager" class="k-link">Event Log Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/EvaluationManager" class="k-link">Evaluation Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/CacheManager" class="k-link">Cache Manager</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Administration/RunOnceActions" class="k-link">Run Once Actions</a></li></ul></li><li class="k-item k-state-default" role="menuitem"><span class="k-link">Form Builder<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/FormBuilder/CreateForm" class="k-link">Create Form</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/FormBuilder/BuiltFormsManager" class="k-link">Manage Built Forms</a></li></ul></li><li class="k-item k-state-default k-last" role="menuitem"><span class="k-link">Configurations<span class="k-icon k-i-arrow-e"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first k-last" role="menuitem"><a href="/IEP/StudentEvaluation/StudentEvaluationManager" class="k-link">Student Evaluations</a></li></ul></li></ul></li>
+    <li class="k-item k-state-default" role="menuitem"><span class="k-link">Permissions<span class="k-icon k-i-arrow-s"></span></span><ul class="k-group k-menu-group" role="menu" aria-hidden="false"><li class="k-item k-state-default k-first" role="menuitem"><a href="/IEP/Administration/UserAccessManager" class="k-link">User Access Manager</a></li><li class="k-item k-state-default" role="menuitem"><a href="/IEP/Administration/UserManager" class="k-link">User Role Manager</a></li><li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Administration/PermissionManager" class="k-link">Permission Manager</a></li></ul></li>
+    <li class="k-item k-state-default" role="menuitem"><a href="http://miami-demo.accelidemo.com" class="k-link">AcceliTrack</a></li>
+    <li class="k-item k-state-default k-last" role="menuitem"><a href="/IEP/Account/Logout" class="k-link">Logout</a></li>
+</ul>
+                </div>
+                <div>
+                    
+
+<script type="text/javascript">
+    var StudentDetails,
+        EventManager,
+        ServiceManager,
+        StudentEvaluationManager,
+        ProgressReportManager,
+        ContactHistoryManager,
+        ContactNoteManager,
+        StudentAccommodationAssessmentManager,
+        StudentSection504PlanAccommodationsManager,
+        EseTeamManager,
+        StudentInformationManager,
+        StudentAttachmentManager,
+        ExceptionalityManager,
+        StudentAssessmentManager;
+
+    jQuery(function() {
+
+        StudentDetails = new StudentDetails({
+            studentId: "1182288",
+            goalEventId: "00000000-0000-0000-0000-000000000000",
+            studentViewType: "MiamiIEPTeams",
+            setStudentViewUrl: "/IEP/Students/SetStudentView",
+            getEventsInProgressUrl: "/IEP/Students/GetEventsInProgress",
+            getEventsLockedUrl: "/IEP/Students/GetEventsLocked",
+            viewEventUrl: "/IEP/Events/ViewEvent",
+            openEventGroupUrl: "/IEP/Events/OpenEventGroup",
+            removeEventGroupUrl: "/IEP/Events/DeleteEventGroup",
+            getGoalsObjectivesUrl: "/IEP/Students/GetGoalsObjectives",
+            getStudentDisabilitiesUrl: "/IEP/Disabilities/GetStudentDisabilities",
+            allowGoalTargetBaseline: false,
+            printGoalUrl: "/IEP/Events/PrintGoal",
+            downloadGoalUrl: "/IEP/Events/DownloadGoal",
+            caseloadExists: false,
+            watchlistExists: false,
+            addStudentToCaseloadUrl: "/IEP/Caseload/AddStudentToCaseload",
+            removeStudentFromCaseloadUrl: "/IEP/Caseload/RemoveStudentFromCaseload",
+            addStudentToWatchlistUrl: "/IEP/Watchlist/AddStudentToCaseload",
+            removeStudentFromWatchlistUrl: "/IEP/Watchlist/RemoveStudentFromCaseload",
+            programType: 'MiamiIEP',
+            enableEndDate: false
+            });
+
+        StudentAssessmentManager = new StudentAssessmentManager({
+            studentId: "1182288",
+            resetFiltersUrl: "/IEP/Students/ResetStudentAssessmentFilters",
+            getStudentAssessmentsUrl: "/IEP/Students/GetStudentAssessments",
+            
+            openStudentAssessmentUrl: "/IEP/Students/OpenStudentAssessment",
+            removeStudentAssessmentUrl: "/IEP/Students/RemoveStudentAssessment",
+            
+        });
+
+        StudentInformationManager = new StudentInformationManager({
+            studentId: "1182288",
+            getStudentContactsUrl: "/IEP/Administration/GetStudentContacts",
+            residenceOtherId: "f5e15113-c22f-41e7-b200-6c136b86be27",
+            modifyStudentContactUrl: "/IEP/Administration/ModifyStudentContact",
+            getStudentDisabilitiesUrl: "/IEP/Disabilities/GetStudentDisabilities",
+            modifyStudentLiaisonUrl: "/IEP/Administration/ModifyLiaison",
+            saveStudentLiaisonUrl: "/IEP/Administration/SaveLiaison",
+            caseloadExists: false,
+            watchlistExists: false,
+            addStudentToCaseloadUrl: "/IEP/Caseload/AddStudentToCaseload",
+            removeStudentFromCaseloadUrl: "/IEP/Caseload/RemoveStudentFromCaseload",
+            addStudentToWatchlistUrl: "/IEP/Watchlist/AddStudentToCaseload",
+            removeStudentFromWatchlistUrl: "/IEP/Watchlist/RemoveStudentFromCaseload",
+            programType: 'MiamiIEP'
+        });
+
+        ExceptionalityManager = new ExceptionalityManager({
+            isReadOnly: true,
+            studentId: "1182288",
+            programType: 'MiamiIEP',
+            getStudentDisabilitiesUrl: "/IEP/Exceptionalities/GetStudentDisabilities",
+            printDisabilitiesUrl:  "/IEP/Exceptionalities/PrintDisabilities",
+            downloadDisadilitiesUrl: "/IEP/Exceptionalities/DownloadDisabilities"
+        });
+
+        EventManager = new EventManager({
+            getEventsUrl: "/IEP/Students/GetEventsInProgress",
+            openEventGroupUrl: "/IEP/Events/OpenEventGroup?CommonStudentId=1182288",
+            openEventUrl: "/IEP/Events/OpenEvent",
+            inactivateEventUrl: "/IEP/Events/InactivateEvent",
+            printEventUrl: "/IEP/Events/PrintEvent",
+            downloadEventUrl: "/IEP/Events/DownloadEvent",
+            programType: 'MiamiIEP',
+            enableEndDate: false
+            });
+
+        if (false)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            resetFiltersUrl: "/IEP/Services/ResetHamptonIEPServiceFilters",
+            getServicesUrl: "/IEP/Services/GetHamptonIEPEventServices",
+            getLreUrl: "/IEP/Services/GetEventLre",
+            openServiceUrl: "/IEP/Services/OpenHamptonIepService",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            recalculateLreUrl: "/IEP/Services/RecalculateLre",
+            printServicesUrl: "/IEP/Services/PrintHamptonIEPServices",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            openServiceLreUrl: "/IEP/Services/OpenServiceLre",
+            transportationServiceDefaultMinutesLimit: 10,
+            hasUpdatePermission: false
+        });
+
+        if (false)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            resetFiltersUrl: "/IEP/Services/ResetBroward504ServiceFilters",
+            getServicesUrl: "/IEP/Services/GetBroward504EventServices",
+            openServiceUrl: "/IEP/Services/OpenBroward504Service",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            printServicesUrl: "/IEP/Services/PrintBroward504Services",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            hasUpdatePermission: false
+        });
+        if (true)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getServicesUrl: "/IEP/Services/GetMiamiIEPServices",
+            openServiceUrl: "/IEP/Services/OpenMiamiIEPService",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            printServicesUrl: "/IEP/Services/PrintMiamiServices",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            hasUpdatePermission: false,
+            programType: "MiamiIEP"
+        });
+        if (false)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getServicesUrl: "/IEP/Services/GetMiamiIEPServices",
+            openServiceUrl: "/IEP/Services/OpenMiami504Service",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            printServicesUrl: "/IEP/Services/PrintMiamiServices",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            hasUpdatePermission: false,
+            programType: "MiamiIEP"
+        });
+        if (false)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getServicesUrl: "/IEP/Services/GetMiamiIFSPServices",
+            openServiceUrl: "/IEP/Services/OpenMiamiIFSPService",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            printServicesUrl: "/IEP/Services/PrintMiamiServices",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            hasUpdatePermission: false,
+            programType: "MiamiIEP"
+        });
+        if (false)
+            ServiceManager = new ServiceManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getServicesUrl: "/IEP/Services/GetMiamiPSSPServices",
+            openServiceUrl: "/IEP/Services/OpenMiamiPSSPService",
+            inactivateServiceUrl: "/IEP/Services/InactivateService",
+            printServicesUrl: "/IEP/Services/PrintMiamiServices",
+            downloadServicesUrl: "/IEP/Services/DownloadServices",
+            hasUpdatePermission: false,
+            programType: "MiamiIEP"
+        });
+        StudentAttachmentManager = new StudentAttachmentManager({
+            studentId: "1182288",
+            getAttachmentsUrl: "/IEP/Students/GetStudentAttachments",
+            resetAttachmentsFiltersUrl: "/IEP/Students/ResetAttachmentsFilters",
+            modifyAttachmentUrl: "/IEP/Students/OpenAttachment",
+            downloadAttachment: "/IEP/Events/DownloadAttachment",
+            removeEventAttachmentUrl: "/IEP/Events/RemoveEventAttachment",
+            removeStudentAttachmentUrl: "/IEP/Students/RemoveAttachment",
+            printCoverPageUrl: "/IEP/Students/PrintCoverPage",
+            downloadCoverPageUrl: "/IEP/Students/DownloadCoverPage",
+            uploadAttachments: "/IEP/Students/UploadAttachments",
+            updatedConfirmation: "Attachment has been updated successfully.",
+            removedConfirmation: "Attachment has been removed successfully.",
+            studentProgramType: "MiamiIEP"
+        });
+
+        StudentEvaluationManager = new StudentEvaluationManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getStudentEvaluationsUrl: "/IEP/Students/GetStudentEvaluations",
+            resetEvaluationsFiltersUrl: "/IEP/Students/ResetEvaluationsFilters",
+            printEvaluationsUrl: "/IEP/Events/PrintEvaluations",
+            downloadEvaluationsUrl: "/IEP/Events/DownloadEvaluations"
+        });
+
+        ProgressReportManager = new ProgressReportManager({
+            studentId: "1182288",
+            printProgressReportUrl: "/IEP/Students/PrintProgressReport",
+            downloadProgressReportUrl: "/IEP/Students/DownloadProgressReport",
+            openGoalProgressIndexUrl: "/IEP/Students/OpenGoalProgressIndex",
+            getProgressReportCommentsUrl: "/IEP/Students/GetProgressReportComments",
+            createUpdateProgressReportCommentUrl: "/IEP/Students/CreateOrUpdateProgressReportComment",
+            removeProgressReportCommentUrl: "/IEP/Students/RemoveProgressReportComment",
+            getProgressReportHistoryEventsUrl: "/IEP/Students/GetProgressReportHistoryEvents",
+            viewEventUrl: "/IEP/Events/ViewEvent",
+            viewProgressReportHistoryDetailsUrl: "/IEP/Students/ViewProgressReportHistoryDetails"
+        });
+
+        ContactHistoryManager = new ContactHistoryManager({
+            studentId: "1182288",
+            getContactHistory: "/IEP/Students/GetContactHistory",
+            openContactHistoryUrl: "/IEP/Students/OpenContactHistory",
+            printContactHistoryUrl: "/IEP/Students/PrintContactHistory",
+            downloadContactHistoryUrl: "/IEP/Students/DownloadContactHistory",
+            updateContactHistory: "/IEP/Students/UpdateContactHistory",
+            removeContactHistory: "/IEP/Students/RemoveContactHistory",
+            filterContactHistory: "/IEP/Students/FilterContactHistory",
+            resetFilter: "/IEP/Students/ResetContactHistoryFilter",
+            programType: "MiamiIEP"
+        });
+
+        ContactNoteManager = new ContactNoteManager({
+            studentId: "1182288",
+            getNotes: "/IEP/Students/GetContactNotes",
+            createNote: "/IEP/Students/CreateContactNote",
+            openNote: "/IEP/Students/OpenContactNote",
+            removeNote: "/IEP/Students/RemoveContactNote",
+            programType: 'MiamiIEP'
+        });
+
+        StudentAccommodationAssessmentManager = new StudentAccommodationAssessmentManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getAssessmentAccommodationsUrl: "/IEP/Students/GetAssessmentAccommodations",
+            getAccommodationsUrl: "/IEP/Students/GetAccommodations",
+            getAssessmentsUrl: "/IEP/Students/GetAssessments",
+            printAccommodationAssessmentUrl: "/IEP/Events/PrintAccommodationAssessment",
+            downloadAccommodationassessmentUrl: "/IEP/Events/DownloadAccommodationAssessment"
+        });
+
+        StudentSection504PlanAccommodationsManager = new StudentSection504PlanAccommodationsManager({
+            eventId: "00000000-0000-0000-0000-000000000000",
+            getAccommodationsUrl: "/IEP/Students/GetSection504Accommodations",
+            printAccommodationsUrl: "/IEP/Events/PrintSection504PlanAccommodations",
+            downloadAccommodationsUrl: "/IEP/Events/DownloadSection504PlanAccommodations"
+        });
+
+        EseTeamManager = new EseTeamManager({
+            studentId: "1182288",
+            getEseTeamsUrl: "/IEP/EseTeams/GetEseTeams",
+            openEseTeamUrl: "/IEP/EseTeams/OpenEseTeam",
+            removeEseTeamUrl: "/IEP/EseTeams/RemoveEseTeam",
+            getCommonUsersUrl: "/IEP/EseTeams/GetCommonUsers",
+            commonUserValueMapperUrl: "/IEP/EseTeams/CommonUserValueMapper",
+            getCommonStudentContactsUrl: "/IEP/EseTeams/GetCommonStudentContacts",
+            programType: "MiamiIEP"
+        });
+    });
+</script>
+
+<h1>
+
+
+<a href="/IEP/Students" title="Students">Students</a>
+&gt;
+<a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;ProgramType=MiamiIEP" title="ANGEL ABREU">ANGEL ABREU</a>
+&gt;
+<a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;StudentViewType=MiamiIEPTeams&amp;ProgramType=MiamiIEP" title="IEP Team">IEP Team</a>
+</h1>
+
+<div>
+    <table class="w-full">
+        <tbody><tr>
+            <td id="pnlStudentMenuCell" class="cell-left relative" style="width: 180px; height: 177px;">
+
+
+<ul id="pnlMultipleProgramStudentDetailsMenu" data-role="panelBar" class="k-widget k-reset k-header k-panelbar" tabindex="0" role="menu">
+        <li class="k-state-active k-item k-first" aria-expanded="false" role="menuitem"><span class="k-link k-header">
+            Miami IEP
+<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span><ul id="pnlStudentMiamiIepMenu" class="menu-vertical k-group k-panel k-widget k-reset k-header k-menu k-menu-vertical" style="width: 178px;" role="menubar" data-role="menu" tabindex="0">
+    
+        <li class="selected k-item k-state-default k-first" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=MiamiIEPTeams&amp;programType=MiamiIEP" class="k-link">
+                IEP Team
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Summary&amp;programType=MiamiIEP" class="k-link">
+                Summary
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=StudentInformation&amp;programType=MiamiIEP" class="k-link">
+                Student Information
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Events&amp;programType=MiamiIEP" class="k-link">
+                Events
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=ContactLog&amp;programType=MiamiIEP" class="k-link">
+                Contact Log / Notes
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Attachments&amp;programType=MiamiIEP" class="k-link">
+                Attachments
+            </a>
+        </li>
+        <li class="k-item k-state-default k-last" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Assessments&amp;programType=MiamiIEP" class="k-link">
+                Assessments
+            </a>
+        </li>
+</ul>
+        </li>
+        <li class="k-state-active k-item" aria-expanded="false" role="menuitem"><span class="k-link k-header">
+            Miami 504
+<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span><ul id="pnlStudentMiami504Menu" class="menu-vertical k-group k-panel k-widget k-reset k-header k-menu k-menu-vertical" style="width: 178px;" role="menubar" data-role="menu" tabindex="0">
+        <li class="k-item k-state-default k-first" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Miami504Teams&amp;programType=Miami504" class="k-link">
+                504 Team
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Summary&amp;programType=Miami504" class="k-link">
+                Summary
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=StudentInformation&amp;programType=Miami504" class="k-link">
+                Student Information
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Events&amp;programType=Miami504" class="k-link">
+                Events
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=ContactLog&amp;programType=Miami504" class="k-link">
+                Contact Log / Notes
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Attachments&amp;programType=Miami504" class="k-link">
+                Attachments
+            </a>
+        </li>
+        <li class="k-item k-state-default k-last" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Assessments&amp;programType=Miami504" class="k-link">
+                Assessments
+            </a>
+        </li>
+</ul>
+        </li>
+        <li class="k-state-active k-item" aria-expanded="false" role="menuitem"><span class="k-link k-header">
+            Miami IFSP
+<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span><ul id="pnlStudentMiamiIfspMenu" class="menu-vertical k-group k-panel k-widget k-reset k-header k-menu k-menu-vertical" style="width: 178px;" role="menubar" data-role="menu" tabindex="0">
+        <li class="k-item k-state-default k-first" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Summary&amp;programType=MiamiIFSP" class="k-link">
+                Summary
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=StudentInformation&amp;programType=MiamiIFSP" class="k-link">
+                Student Information
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Events&amp;programType=MiamiIFSP" class="k-link">
+                Events
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=ContactLog&amp;programType=MiamiIFSP" class="k-link">
+                Contact Log / Notes
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Attachments&amp;programType=MiamiIFSP" class="k-link">
+                Attachments
+            </a>
+        </li>
+        <li class="k-item k-state-default k-last" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Assessments&amp;programType=MiamiIFSP" class="k-link">
+                Assessments
+            </a>
+        </li>
+</ul>
+        </li>
+        <li class="k-state-active k-item" aria-expanded="false" role="menuitem"><span class="k-link k-header">
+            Miami EP
+<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span><ul id="pnlStudentMiamiEpMenu" class="menu-vertical k-group k-panel k-widget k-reset k-header k-menu k-menu-vertical" style="width: 178px;" role="menubar" data-role="menu" tabindex="0">
+        <li class="k-item k-state-default k-first" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=MiamiEPTeams&amp;programType=MiamiEP" class="k-link">
+                EP Team
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Summary&amp;programType=MiamiEP" class="k-link">
+                Summary
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=StudentInformation&amp;programType=MiamiEP" class="k-link">
+                Student Information
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Events&amp;programType=MiamiEP" class="k-link">
+                Events
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=ContactLog&amp;programType=MiamiEP" class="k-link">
+                Contact Log / Notes
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Attachments&amp;programType=MiamiEP" class="k-link">
+                Attachments
+            </a>
+        </li>
+        <li class="k-item k-state-default k-last" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Assessments&amp;programType=MiamiEP" class="k-link">
+                Assessments
+            </a>
+        </li>
+</ul>
+        </li>
+        <li class="k-state-active k-item k-last" aria-expanded="false" role="menuitem"><span class="k-link k-header">
+            Miami PSSP
+<span class="k-icon k-i-arrow-n k-panelbar-collapse"></span></span><ul id="pnlStudentMiamiPsspMenu" class="menu-vertical k-group k-panel k-widget k-reset k-header k-menu k-menu-vertical" style="width: 178px;" role="menubar" data-role="menu" tabindex="0">
+        <li class="k-item k-state-default k-first" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=MiamiPSSPTeams&amp;programType=MiamiPSSP" class="k-link">
+                PSSP Team
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Summary&amp;programType=MiamiPSSP" class="k-link">
+                Summary
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=StudentInformation&amp;programType=MiamiPSSP" class="k-link">
+                Student Information
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Events&amp;programType=MiamiPSSP" class="k-link">
+                Events
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=ContactLog&amp;programType=MiamiPSSP" class="k-link">
+                Contact Log / Notes
+            </a>
+        </li>
+        <li class="k-item k-state-default" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Attachments&amp;programType=MiamiPSSP" class="k-link">
+                Attachments
+            </a>
+        </li>
+        <li class="k-item k-state-default k-last" role="menuitem">
+            <a href="/IEP/Students/ViewStudent?CommonStudentId=1182288&amp;studentViewType=Assessments&amp;programType=MiamiPSSP" class="k-link">
+                Assessments
+            </a>
+        </li>
+</ul>
+        </li>
+</ul>
+
+            </td>
+            <td class="cell-right">
+                <h4 id="pnlStudentTitle">IEP Team</h4>
+                <div id="pnlStudentPlan" class="mT10 hidden" style="display: none;">
+                    <div>
+                        <h5>Student Plan</h5>
+                        <div>
+
+                                <span>N/A</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="pnlStudentContent" class="mT10"><div class="mB10">
+    <h5>IEP Team</h5>
+    <div>
+        <div class="mT10">
+            <div id="pnlEseTeams" data-role="grid" class="k-grid k-widget"><table role="grid"><colgroup><col class="k-group-col"><col><col><col style="width:10px"></colgroup><thead class="k-grid-header" role="rowgroup"><tr role="row"><th class="k-group-cell k-header">&nbsp;</th><th role="columnheader" data-field="SourceType" rowspan="1" data-index="0" id="486df504-1c67-4cb8-bb38-209e166d06ea" style="display:none" class="k-header" data-role="columnsorter"><a class="k-link" href="#">SourceType</a></th><th role="columnheader" data-field="Name" rowspan="1" data-title="Name" data-index="1" id="2ff431f5-69a6-4633-9663-7f1de0b72966" class="k-header">Name</th><th role="columnheader" data-field="Type" rowspan="1" data-title="Type" data-index="2" id="85035cbf-527a-4c73-a071-f4786b558361" class="k-header">Type</th><th role="columnheader" data-field="Remove" rowspan="1" data-title=" " data-index="3" id="299b3a85-ea7b-4f41-9d7d-b0c198632606" class="k-header"> </th></tr></thead><tbody role="rowgroup"><tr role="row" class="k-grouping-row"><td colspan="4" aria-expanded="true"><p class="k-reset"><a class="k-icon k-i-collapse" href="#" tabindex="-1"></a>Type: User</p></td></tr><tr data-uid="e524a70a-94cc-4cb9-926e-14e51b220d95" role="row"><td class="k-group-cell">&nbsp;</td><td style="display:none" role="gridcell">User</td><td role="gridcell">Edw, Johne</td><td role="gridcell">Type One</td><td role="gridcell"><a href="javascript:void(0);" onclick="EseTeamManager.removeEseTeam(&quot;35fc9334-6d77-46ab-9670-a5fd00c38aad&quot;);" class="k-icon k-delete k-link" title="Remove"></a></td></tr><tr class="k-alt" data-uid="f88ae728-56c6-4df0-b352-75205894004c" role="row"><td class="k-group-cell">&nbsp;</td><td style="display:none" role="gridcell">User</td><td role="gridcell">Oliver, Wendy</td><td role="gridcell">Type One</td><td role="gridcell"><a href="javascript:void(0);" onclick="EseTeamManager.removeEseTeam(&quot;3ab432f4-58ae-4e45-a938-a5fd00c38ab0&quot;);" class="k-icon k-delete k-link" title="Remove"></a></td></tr></tbody></table></div>
+        </div>
+
+        <div class="mT10 txt-r">
+            <a id="btnCreateEseTeam" data-role="button" class="k-button" role="button" aria-disabled="false" tabindex="0">Create</a>
+        </div>
+
+        <div id="pnlEseTeamDetails"></div>
+    </div>
+</div></div>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer">
+<div>
+    <div class="left p5 txt-c">
+        <span class="version">2.31.13.352</span>
+    </div>
+    <a href="http://accelify.com/" target="_blank">Home</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Home/AboutUs">About Us</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Services/Solutions">Services</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Home/Testimonials">Testimonials</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Home/NewsEvents">Links</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Home/Faq">Help</a>
+    <a class="footerLink" target="_blank" href="http://accelify.com/Home/Contact">Contact</a>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pnlMessageBoxConfirm" style="display: none">
+    <div class="p10 form">
+        <div id="pnlMessageBoxConfirmMessage"></div>
+
+        <div class="txt-r mT10">
+            <a id="btnMessageBoxConfirmCancel" href="javascript:void(0);">Cancel</a>
+            <a id="btnMessageBoxConfirmDiscard" href="javascript:void(0);">Discard</a>
+            <a id="btnMessageBoxConfirmSave" href="javascript:void(0);">Save</a>
+        </div>
+    </div>
+</div>
+
+
+
+    <script type="text/javascript">
+        (function(i, s, o, g, r) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o);
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-37185636-13', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+<span id="ajaxNotification" data-role="notification" style="display: none;"></span><div class="k-widget k-window" style="padding-top: 29px; min-width: 90px; min-height: 50px; width: 600px; display: none; top: 0px; left: 0px;" data-role="draggable"><div class="k-window-titlebar k-header" style="margin-top: -29px;">&nbsp;<span class="k-window-title" id="pnlItemSelector_wnd_title">Select Item</span><div class="k-window-actions"><a role="button" href="#" class="k-window-action k-link"><span role="presentation" class="k-icon k-i-close">Close</span></a></div></div><div id="pnlItemSelector" data-role="window" class="k-window-content k-content" style="" tabindex="0" role="dialog" aria-labelledby="pnlItemSelector_wnd_title"></div></div><div class="k-widget k-window" style="padding-top: 29px; min-width: 90px; min-height: 50px; width: 480px; display: none;" data-role="draggable"><div class="k-window-titlebar k-header" style="margin-top: -29px;">&nbsp;<span class="k-window-title" id="pnlMessageBoxWarning_wnd_title">Warning</span><div class="k-window-actions"><a role="button" href="#" class="k-window-action k-link"><span role="presentation" class="k-icon k-i-close">Close</span></a></div></div><div id="pnlMessageBoxWarning" style="" data-role="window" class="k-window-content k-content" tabindex="0" role="dialog" aria-labelledby="pnlMessageBoxWarning_wnd_title">
+    <div class="p10 form">
+        <div id="pnlMessageBoxWarningMessage"></div>
+
+        <div class="txt-r mT10">
+            <a id="pnlMessageBoxWarningOk" href="javascript:void(0);" data-role="button" class="k-button" role="button" aria-disabled="false" tabindex="0">Ok</a>
+        </div>
+    </div>
+</div></div><script type="text/javascript" src="chrome-extension://pncoonbpgmlbbjnnmaindchmjckkjcdb/contentProcessor.js"></script><div id="extension-is-installed"></div><script type="text/javascript" src="chrome-extension://fiahpmmidlchdfcdpckaclkancbnbgnl/RecorderFiles/TestStudio/teststudio.js"></script><script type="text/javascript" src="chrome-extension://fiahpmmidlchdfcdpckaclkancbnbgnl/RecorderFiles/TestStudio/teststudio.js"></script></body><template id="transover-popup-template">
+  <style>
+    .pos_translation {
+      padding-bottom: 4px;
+    }
+
+    .rtl {
+      direction: rtl;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 7px 9px 3px 9px;
+      position: fixed;
+      z-index: 2147483647;
+      top: -1500px;
+      left: 0;
+      box-sizing: content-box;
+    }
+  </style>
+
+  <main></main>
+</template><template id="transover-tat-popup-template">
+  <style>
+    #tat_input_container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    #tat_input_container label {
+      line-height: 26px;
+    }
+
+    #tat_input {
+      margin-left: 5px;
+      flex-grow: 2;
+      font-size: 15px;
+      line-height: 20px;
+      border-radius: 2px;
+      border: 1px #ccc solid;
+      padding-left: 5px;
+    }
+
+    #tat_submit_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #tat_submit_container select {
+      margin-left: 5px;
+    }
+
+    #tat_submit {
+      width: 45px;
+      margin-left: 5px;
+    }
+
+    #tat_to_lang {
+      width: 150px;
+    }
+
+    #swap_languages {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEKElEQVR4nL1Vb0xbVRQ/97Xre23pn9FSNmBQGEqGMJQPIyU6MkMczf6gbAyNk5lo9gkTdTPGLPswzRITjcYPftREiYQ/g5EVZZEwNt3ELBmiI/wLqB1rFdaWDaSjfe+e44cHpUAL0URPcnPuu/e887vn3PM7F+A/Fs1mBi+fbNBXPHNgv6ShCa/X+48BhI02T7522lbmrrtsTct8RRCETQ+TSLTJNhreOuvcXXG4y2C1F874vL25BcWP5hWWKgQEAABKNBJZmAvNzIaCi1d6vqVkfliixdfPnH+8eO9BzxaDKQuRgCMRR2KcYhoQgaKRh/PBO+O90yM/fhTy/faD51InrvW1LuzT5z6sLKo4/LVGZ3AoSMARQEEChYgpSKAgMa5qQKaRREvaLmteST0jlHIc5usjw8M8KUBN3Yu2soP1fYLOkLrkDJadxb5pWQMgESASIDHBsC3vSR4Ja3fYUq6OjY1SQoBUq3kxHPT/lJpdUAVaMYUjMQWJKbR8clA1qWniBAyJGKpgTHLklC3cHb469POANyHA1NQUDN66+atNxCuWjJ2VgmhUI+EICkfkiKQOIiRgSKDexxIAAtMQoikjRbg4Pj6OAEmq6KsvPhuok6P7H3n6+ZaUdGep/5fv+vyDfe8AQCy/Wslo3+567n3Rnl1CKgAhEOgceeU6UbQCQCApAABAS1PjZC2XD2S7qr9EpPCD+7MDPT09SrzNcYNFdpQfuUgEAhIBEQAJGpEBmDcFAABoa2mePopYK5pt+2RZXleCi0HftTueTx4jIi1jasUTESHiH8s2MR68cea9Ap1kLCHVCJAAwnOh6ZnfR79vb29f5fzZupcMzpLyd32D1862tTY/3OiQsQiMVvuhQlfVB5xWiPUgOO0LTE3sAQD/qr+4rE0v2vsm0xmdxwTh1dbmpvubAoT+nLotq45haZBoScsorjrRkbn7qTZgQjSWZ0JJQYKtO5+oYaIx7ZigeaG1qdGfCCCWopqjtcZ99W+P64yWDI5EnFTGokou4kgMCUite4L4eTjgG/Jfv1Db3Pj56FqAGA9Ghofl/DynvDV7l3ulJQAotBRRHKEwvvaJQCOZ0vQZ+dW5Nn3/0OCtuwkBAAC228yDW/TGfL0ts4gvMZivtIV49sJaMNLqTJGQb36bReqdnJxM3CrGRkd5ulFzWYkuSnr7jlICjSbOGSzPOREgrKwpclS+13/h47Bv7LzH41lVVQnbtdvt1phT7SXWnKLjkj1rj6DTpxKBQKS+BgRMEB25+UjElMW/Fu7daD0XCfk/7ejoCCe95ETicrmYyWQSRVHUQdzrJ6WYTVmHTnmj88HZwI2WU5G5QFNnZ2c0kY8NAZKJu/qI2Vl54nawv60hPDf7TVdXF09m+6/eWafTyWlm4tLcbOBmd3f3uhbyv8rfG8mfJ968lFgAAAAASUVORK5CYII=);
+      cursor: pointer;
+    }
+
+    #swap_languages.disabled {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEIklEQVR4nL1VX0hbVxj/7k0w6TS3QVck+qC2/tfhiMyRUR8GlU4XNzJYsFBUluXBh/Uho0PBPWww6TbEpzGz+pKBC2OS2tkHRbQd3ZiIdkoVghptdO2MRmP+3Xtzb+759nBNFl0S8WH7weF+nO+7v985h/P7DsB/DMVZBTab7YLJZLouCMKG1+s9twCdLdnf31/Q09MzWVZWZqFp+szFpIMyU2JgYKC0s7Pzga6oqHZ9fX2msbGx0mAwxBN5juNi+/v7e36/n5+cnMRzqQ4NDb3q9/t3JEnCuCRhPB4noiiiIIgkJggYi8WQ53lycHgYnJmddfX29l41mUxZTyMJu91+LRKJBCSZGEVRREEUiSATE57nkeM4ZFmWRKNRjEQieHQUFO+OjAyYzWbVab4T59rd3V1gs9ke5ubm5iMAACJgckBKfHIAIF1TW3s1HAopc3JyHrndbkwrkJeXx29sbPyh1+vfuqBW5yEChYDUMVHql0LyT0wQAZFQlZVVry8sLDxaXFzwphXY3t6Gubm5zXA4PFtXV3eNYZh8RASJEJDiEiESQXlIeCxMISIQJICIFEVRCkmSNKIo3FtbWyMAGW6R3W5/wvP89Y9u3fqxprpG/2Bi4qHL5eoDAClRwzDMyxaL5U55RWUDIgEkiAQRqqqr31CpVFoA8GcUAABwOBweQRDetlgs30uEsIFA4Mn09HQ8tSY/v0C0Wq33CCItHx8BhUKhAgDmTAEAAKfT6ZMk6X2dTvemKIrkdP7Zs61f+vp66xBRSVEUAAAgIhJC/krUUIlgcHCwimGYBvlWyNjb2/MtLS09HhsbO0H+gcXyUktLy+c/37//qdPp5LItMrkDnU7X3tHR8fWxACIitbOz83xlZaUJAF6k/hTjeeU77e02RqMppWn6w9HR0aMzBTwez1OUAQmN4uLiotu3P3EZjcafaJoWjueBEKImBKG5ufk9jUZzSalU3nA4HC8yiQAAgNlszt3d3X0utwSByO0ghhzHI8txJMqyGIlESTgcwVAojMFgiBwdBfEwEMCFxcWnVqu1Oh1v0gerq6tiSUmJqG9sbEXZtgljATltNJKcpxAJXGQuXqqvf+VdmqZ/n5+f/zOtAACAWq1eYhim/HJZWT1mEiAJc8nuRSLHOSqVZmtrM6xUKmc8Hk/6VuF2uyVBECZZllWXV1ToFbRCkeJUOBZIkCdjnuPEkbvfDS0vL38xMTFx4lZRkAatra2KwsLChteamm5euXylSW5+CTMhUEDRVdVV5YQgFQoGo8P24c+2vd5vXC4Xe5orrUACBoOB0mg0KpVKlQMpr59Wq9Xc+fIrr8/nC9iHv/3Y5/P9MD4+LmTjOhfMZjPz+NffvF1dXe1GozHrU5p1B5nQ1tam1Gq1pQcHB5tTU1P/aiH/K/4G7RvFhRjTPe0AAAAASUVORK5CYII=);
+      cursor: auto;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      width: 420px;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 10px 10px 8px 10px;
+      position: fixed;
+      z-index: 2147483647;
+      top: 15px;
+      right: 15px;
+    }
+  </style>
+
+  <main>
+    <div id="tat_input_container">
+      <label for="tat_from_lang">Translate</label>
+      <input id="tat_input" type="text">
+    </div>
+    <div id="tat_submit_container">
+      <label for="tat_from_lang">from</label>
+      <select id="tat_from_lang"></select>
+
+      <div id="swap_languages"></div>
+
+      <label for="tat_to_lang">into</label>
+      <select id="tat_to_lang"></select>
+
+      <input type="submit" id="tat_submit" value="go">
+    </div>
+  </main>
+</template></html>

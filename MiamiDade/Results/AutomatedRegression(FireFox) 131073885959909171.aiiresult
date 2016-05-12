@@ -1,0 +1,720 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.RunResult",
+  "__value": {
+    "IsComplete": true,
+    "Name": "AutomatedRegression(FireFox)",
+    "StartTime": "2016-05-10T21:03:10",
+    "EndTime": "2016-05-10T21:16:35.9839167Z",
+    "Id": "216a7cb7-dde1-47e0-bcff-8d12ce9955bd",
+    "DataCollectors": {},
+    "TestResults": [
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:03:15' - Executing test: 'Section504_Eligibility_Positive(FireFox)', path: '504\\Section  ID (1714) - 504 Eligibility Meeting\\Section 504 Eligibility Form\\Section504_Eligibility_Positive.tstest.'\r\n'11.05.2016 00:03:15' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:03:15' - Starting execution....\r\n'11.05.2016 00:04:16' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:04:16' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:04:16' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "a1c386e0-c81a-4d49-ac1f-1d470f8f02d2",
+          "TestName": "Section504_Eligibility_Positive(FireFox)",
+          "TestPath": "504\\Section  ID (1714) - 504 Eligibility Meeting\\Section 504 Eligibility Form\\Section504_Eligibility_Positive.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Click 'YesSpan'",
+            "Click 'ConsenRespForm'",
+            "Click 'CaringForOnesSelf'",
+            "Click 'PerformingManualTasks'",
+            "Enter text 'TestTest' in 'WaysInWhichTheMajorLifeActivityIsLimited'",
+            "Click 'YesSpan4'",
+            "Click 'BtnUpdateFormLink'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:04:16.2876085+03:00",
+          "StartTime": "2016-05-10T21:03:15.9241559Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:04:17' - Executing test: '6111_EligWorkflow(FireFox)', path: '504\\Section  ID (1714) - 504 Eligibility Meeting\\6111_EligWorkflow.tstest.'\r\n'11.05.2016 00:04:17' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:04:17' - Starting execution....\r\n'11.05.2016 00:05:17' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:05:17' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:05:17' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "fc22f048-117b-409f-893a-f385c10fe1f1",
+          "TestName": "6111_EligWorkflow(FireFox)",
+          "TestPath": "504\\Section  ID (1714) - 504 Eligibility Meeting\\6111_EligWorkflow.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Execute test 'LoginAsAdminIFSPNoIEP'",
+            "Wait for 'Loading'",
+            "'Maximize' the browser window",
+            "Handle 'Confirm' dialog.",
+            "Execute test 'GoToSt504Events'",
+            "Wait for element 'EventsLink' 'is' visible.",
+            "Click 'BtnCreateEventGroupLink'",
+            "Click 'Span'",
+            "KendoListBox: select item by text '504 Eligibility Meeting'",
+            "KendoInputvalue '11/11/2016' entered.",
+            "Click 'BtnSaveEventGroupLink'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:05:17.9231339+03:00",
+          "StartTime": "2016-05-10T21:04:17.4186732Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:05:18' - Executing test: 'C2BTransition_Positive(FireFox)', path: 'ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\c2bTransition\\C2BTransition_Positive.tstest.'\r\n'11.05.2016 00:05:18' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:05:18' - Starting execution....\r\n'11.05.2016 00:06:18' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:06:18' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:06:19' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "66b57e23-d847-4f0c-bb14-b234af6acf17",
+          "TestName": "C2BTransition_Positive(FireFox)",
+          "TestPath": "ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\c2bTransition\\C2BTransition_Positive.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Custom Annotation : Positive test of IFSP from filling",
+            "Execute test 'LoginAsAdminHampton'",
+            "Navigate to : '/IEP/Students/ViewStudent?commonStudentId=11'",
+            "Click 'SelectSpan'",
+            "Click 'IFSP_Annual_Meeting_Item'",
+            "Click 'CtoBTransitionForm'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:06:18.9976271+03:00",
+          "StartTime": "2016-05-10T21:05:18.6341745Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:06:20' - Executing test: 'Fape_Check_Fields(FireFox)', path: 'ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\Fape_Check_Fields.tstest.'\r\n'11.05.2016 00:06:20' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:06:20' - Starting execution....\r\n'11.05.2016 00:07:20' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:07:20' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:07:20' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "c496569a-205b-4b86-b41c-66e9af2a74dd",
+          "TestName": "Fape_Check_Fields(FireFox)",
+          "TestPath": "ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\Fape_Check_Fields.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login As Admin",
+            "Go to Fape Form",
+            "Enter text 'Description' in 'EvaluationDescriptionOfTheActionProposed'",
+            "Verify 'ProvisionOfFAPEDescriptionOfTheActionProposed' is enabled",
+            "Enter text 'Explanation' in 'EvaluationExplanationOfWhyThisActionIsBeing'",
+            "Click 'DescriptionDiv'",
+            "Click 'Div'",
+            "Enter text 'Action refused' in 'EvaluationDescriptionOfAnyActionBeingRefused'",
+            "Enter text 'Expl refused' in 'EvaluationExplanationOfWhyThatActionIsBeingRefused'",
+            "Click 'YesSpan'",
+            "Click 'IsNoLongerLabelTag'",
+            "Click 'NALabelTag'",
+            "Click 'GeneralLabelTag'",
+            "Click 'ResourceRoomLabelTag'",
+            "KendoMenu 'Root option AcceliTrack' action: Click",
+            "Click 'StudentManagerLink'",
+            "Enter text 'Explanatino why proposed' in 'EducationalPlacementExplanationOfWhyThisActionIsBeingProposed'",
+            "Enter text 'Explanation why refused again' in 'ExplanationOfAnyRequestForChangeInPlacement'",
+            "Click 'BtnUpdateFormLink'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:07:20.5281465+03:00",
+          "StartTime": "2016-05-10T21:06:20.2446984Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:07:21' - Executing test: 'Fape_Validate Emty_form(FireFox)', path: 'ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\Fape_Validate Emty_form.tstest.'\r\n'11.05.2016 00:07:21' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:07:21' - Starting execution....\r\n'11.05.2016 00:08:21' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:08:21' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:08:21' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "7968cfbd-7056-40f5-b26d-091ba3008be1",
+          "TestName": "Fape_Validate Emty_form(FireFox)",
+          "TestPath": "ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\Fape_Validate Emty_form.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Execute test 'LoginAsAdminIFSPNoIEP.tstest'",
+            "Navigate to : '/IEP/Events/ViewEvent?EventId=361ad431-b6d1-4050-ae1b-a5cc00a4e528#FAPE&formId=0e88b491-6c41-4aa6-98f7-a5cc00a4e557'",
+            "Click 'BtnValidateFormLink'",
+            "Handle 'Alert' dialog."
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:08:21.4906333+03:00",
+          "StartTime": "2016-05-10T21:07:21.1621827Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:08:23' - Executing test: 'FapeVerifyFieldsNames(FireFox)', path: 'ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\FapeVerifyFieldsNames.tstest.'\r\n'11.05.2016 00:08:23' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:08:23' - Starting execution....\r\n'11.05.2016 00:09:23' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:09:23' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:09:23' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "f61e35a3-dd40-4ebc-98c5-e342dd821e81",
+          "TestName": "FapeVerifyFieldsNames(FireFox)",
+          "TestPath": "ISFP\\ISFP_AM_GROUP\\ISFP_Annual_Meeting\\Fape_Form\\FapeVerifyFieldsNames.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Execute test 'LoginAsAdminIFSPNoIEP.tstest'",
+            "Go to Fape Form",
+            "Click 'PleaseContactDiv'",
+            "Verify 'TextContent' 'Contains' 'please contact:' on 'PleaseContactDiv'",
+            "Verify 'TextContent' 'Contains' 'Description of the action proposed by Miami-Dade County Public Schools (M-DCPS)' on 'DescriptionDiv'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why this action is being proposed:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'Description of any action being refused by M-DCPS' on 'DescriptionDiv'",
+            "Verify 'TextContent' 'Contains' 'Description of any action being refused by M-DCPS' on 'DescriptionDiv'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why that action is being refused:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'A Change In Identification' on 'AChangeInSpan'",
+            "Verify 'TextContent' 'Contains' 'The student continues to be eligible for and is now eligible for Autism Spectrum Disorder, Dual-Sensory  Impaired, Deaf or Hard-of-Hearing, Emotional/Behavioral Disabilities, Developmentally Delayed' on 'TheStudentLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Gifted Status:' on 'GiftedStatusDiv'",
+            "Verify 'TextContent' 'Contains' 'Is no longer eligible for Autism Spectrum Disorder, Dual-Sensory Impaired, Deaf or Hard-ofHearing, Emotional/Behavioral Disabilities, Developmentally Delayed' on 'IsNoLongerLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Is no longer considered a student with disabilities. He/she is being dismissed from special education  based on the reevaluation on reports listed below.' on 'IsNoLongerLabelTag00'",
+            "Verify 'TextContent' 'Contains' 'N/A' on 'NALabelTag0'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why this action is being proposed:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'A change in Educational Placement' on 'AChangeInSpan'",
+            "Verify 'TextContent' 'Contains' 'General Education Class (80% - 100%)' on 'GeneralLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Resource Room (41% - 79%)' on 'ResourceRoomLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Special Class (0% - 40%)' on 'SpecialClassLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Special Day School' on 'SpecialDayLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Hospital/Homebound' on 'HospitalHomeboLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Graduation from High School/Exceeding the age of eligibility for FAPE (Free Appropriate Public)' on 'GraduationLabelTag'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why this action is being proposed:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'Explanation of any request for change in placement that is being refused:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'Provision of FAPE' on 'ProvisionOfDiv'",
+            "Verify 'TextContent' 'Contains' 'Description of the action proposed by Miami-Dade County Public Schools (M-DCPS)' on 'DescriptionDiv'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why this action is being proposed:' on 'ExplanationDiv'",
+            "Verify 'TextContent' 'Contains' 'Description of any action being refused by M-DCPS' on 'DescriptionDiv'",
+            "Verify 'TextContent' 'Contains' 'Explanation of why that action is being refused:' on 'ExplanationDiv'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:09:23.3581719+03:00",
+          "StartTime": "2016-05-10T21:08:23.0277212Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:09:24' - Executing test: 'CreateAndCheckFormPresence(FireFox)', path: 'MultiplePlans\\CommonMethods\\CreateAndCheckFormPresence.tstest.'\r\n'11.05.2016 00:09:24' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:09:24' - Starting execution....\r\n'11.05.2016 00:10:25' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:10:25' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:10:25' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "9d96c916-f043-453f-ba8e-46ca07407b40",
+          "TestName": "CreateAndCheckFormPresence(FireFox)",
+          "TestPath": "MultiplePlans\\CommonMethods\\CreateAndCheckFormPresence.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "IF (Verify 'TextContent' 'NotContain' '' on 'EventListTable')"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:10:25.0527007+03:00",
+          "StartTime": "2016-05-10T21:09:24.9252616Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:10:25' - Executing test: 'CheckEvaluationPresenceTest504(FireFox)', path: 'MultiplePlans\\Evaluation\\CheckEvaluationPresenceTest504.tstest.'\r\n'11.05.2016 00:10:25' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:10:25' - Starting execution....\r\n'11.05.2016 00:11:26' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:11:26' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:11:26' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "f7b76abc-36cf-4938-b7c2-2855cbb03f0e",
+          "TestName": "CheckEvaluationPresenceTest504(FireFox)",
+          "TestPath": "MultiplePlans\\Evaluation\\CheckEvaluationPresenceTest504.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login as Admin",
+            "Execute test 'GoToSt504Events'",
+            "Execute test 'CheckEvaluationDataModule504'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:11:26.4442121+03:00",
+          "StartTime": "2016-05-10T21:10:25.6427344Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:11:27' - Executing test: 'CheckEvaluationPresenceTestIFSP(FireFox)', path: 'MultiplePlans\\Evaluation\\CheckEvaluationPresenceTestIFSP.tstest.'\r\n'11.05.2016 00:11:27' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:11:27' - Starting execution....\r\n'11.05.2016 00:12:27' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:12:27' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:12:27' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "6b09c679-778c-4e7d-8271-d3e0c6086cd5",
+          "TestName": "CheckEvaluationPresenceTestIFSP(FireFox)",
+          "TestPath": "MultiplePlans\\Evaluation\\CheckEvaluationPresenceTestIFSP.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login as Admin",
+            "Execute test 'GoToSt504Events'",
+            "Execute test 'CheckEvaluationDataModule504'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:12:27.8867264+03:00",
+          "StartTime": "2016-05-10T21:11:27.0162448Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:12:28' - Executing test: 'CheckTransitionPresenceTestIFSP(FireFox)', path: 'MultiplePlans\\IFSP Transition\\CheckTransitionPresenceTestIFSP.tstest.'\r\n'11.05.2016 00:12:28' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:12:28' - Starting execution....\r\n'11.05.2016 00:13:29' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:13:29' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:13:29' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "5f92a49b-b394-4695-8533-47640ef39116",
+          "TestName": "CheckTransitionPresenceTestIFSP(FireFox)",
+          "TestPath": "MultiplePlans\\IFSP Transition\\CheckTransitionPresenceTestIFSP.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login as Admin",
+            "Execute test 'GoToStIFSPEvents'",
+            "Execute test 'CheckTransitionDataModuleIFSP'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:13:29.9252748+03:00",
+          "StartTime": "2016-05-10T21:12:28.4607592Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:13:30' - Executing test: 'CheckPartBRightsPresenceTestIFSP(FireFox)', path: 'MultiplePlans\\Part B Rights\\CheckPartBRightsPresenceTestIFSP.tstest.'\r\n'11.05.2016 00:13:30' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:13:30' - Starting execution....\r\n'11.05.2016 00:14:32' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:14:32' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:14:32' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "169585ed-bfbc-4342-9795-f253cac1cc60",
+          "TestName": "CheckPartBRightsPresenceTestIFSP(FireFox)",
+          "TestPath": "MultiplePlans\\Part B Rights\\CheckPartBRightsPresenceTestIFSP.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login as Admin",
+            "Execute test 'GoToStIFSPEvents'",
+            "Execute test 'CheckPartBRightsDataModuleIFSP'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:14:32.0218265+03:00",
+          "StartTime": "2016-05-10T21:13:30.4943073Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:14:32' - Executing test: 'CheckTransportationPresenceTestIFSP(FireFox)', path: 'MultiplePlans\\Transportation\\CheckTransportationPresenceTestIFSP.tstest.'\r\n'11.05.2016 00:14:32' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:14:32' - Starting execution....\r\n'11.05.2016 00:15:34' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:15:34' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:15:34' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "f873b649-0b56-4a07-8f7e-410bcc2a1f4c",
+          "TestName": "CheckTransportationPresenceTestIFSP(FireFox)",
+          "TestPath": "MultiplePlans\\Transportation\\CheckTransportationPresenceTestIFSP.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Login as Admin",
+            "Execute test 'GoToStIFSPEvents'",
+            "Execute test 'CheckTransportationDataModuleIFSP'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:15:34.0763758+03:00",
+          "StartTime": "2016-05-10T21:14:32.5978594Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      },
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.TestResult",
+        "__value": {
+          "Browser": 2,
+          "ExeType": 0,
+          "SeparatorLineCharCount": 60,
+          "Message": "------------------------------------------------------------\r\n'11.05.2016 00:15:34' - Executing test: '15394_Compliance_check(FireFox)', path: 'TestsUponBugs\\15394_Compliance_check.tstest.'\r\n'11.05.2016 00:15:34' - Using .Net Runtime version: '4.0.30319.17929' for test execution. Build version is '2016.1.330.0'.\r\n'11.05.2016 00:15:34' - Starting execution....\r\n'11.05.2016 00:16:35' - Failure detected during execution. Details:\r\n------------------------------------------------------------\r\n'11.05.2016 00:16:35' - System.TimeoutException: Wait for condition has timed out\r\n   at ArtOfTest.Common.WaitSync.CheckResult(WaitSync wait, String extraExceptionInfo, Object target)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout, WaitResultType errorResultType)\r\n   at ArtOfTest.Common.WaitSync.For[T](Predicate`1 predicate, T target, Boolean invertCondition, Int32 timeout)\r\n   at ArtOfTest.WebAii.Core.Manager.WaitForBrowserToConnect(Int32 browserIndexToWaitFor)\r\n   at ArtOfTest.WebAii.Core.Manager.LaunchNewBrowser(BrowserType browserToLaunch, Boolean waitForBrowserToConnect, ProcessWindowStyle windowStyle, String arguments)\r\n   at ArtOfTest.WebAii.Design.Execution.ExecutionEngine.InitializeWeb(ExecutionEngineCreateParams initParams)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.CreateAndInitializeEngine(Test test, ExecutionEngineCreateParams cp)\r\n   at ArtOfTest.WebAii.Design.Execution.TestExecuteProxy.ExecuteTest(ExecuteTestCommand command)\r\n------------------------------------------------------------\r\n'11.05.2016 00:16:35' - Test completed!\r\n",
+          "FailureException": {
+  "__type": "ArtOfTest.Common.Design.Exceptions.ExecutionException",
+  "__value": {
+    "message": "General execution error.",
+    "DataProvider": {
+      "__type": "ArtOfTest.Common.Design.Exceptions.ErrorDataProvider",
+      "__value": {
+        "_info": {
+          "HostState": null
+        }
+      }
+    }
+  }
+},
+          "Result": 1,
+          "TestId": "4cf056e9-a5fb-4688-8684-85c968c33dd2",
+          "TestName": "15394_Compliance_check(FireFox)",
+          "TestPath": "TestsUponBugs\\15394_Compliance_check.tstest",
+          "TestOwner": "",
+          "TestDescription": "",
+          "ProjectPath": "",
+          "StepResults": [],
+          "NotRunStepDescriptions": [
+            "Execute test 'LoginAsAdminHamptonNoIEP.tstest'",
+            "Navigate to : '/IEP/Students/ViewStudent?CommonStudentId=45459&studentViewType=Events&programType=HamptonIEP'",
+            "Execute test 'CreateInitialIEP.tstest'",
+            "Click 'InitialIEPLink0'",
+            "Click 'BtnCheckEventComplienceLink'",
+            "Verify 'TextContent' 'Contains' 'At least one Service is required.' on 'AtLeastOneDiv'"
+          ],
+          "TotalPassedSteps": 0,
+          "ExecutingTestStepCount": 0,
+          "TotalNumberOfNotRunSteps": 0,
+          "IsDataDrivenResult": false,
+          "DataIterationResults": [],
+          "EndTime": "2016-05-11T00:16:35.4758877+03:00",
+          "StartTime": "2016-05-10T21:15:34.7674153Z",
+          "ProfilerResultsPath": null,
+          "VersionGroupKey": "00000000-0000-0000-0000-000000000000",
+          "CommitedBy": null
+        }
+      }
+    ],
+    "FileName": "AutomatedRegression(FireFox) 131073885959909171",
+    "Machine": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.Machine",
+      "__value": {
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "NetworkName": "VOLF",
+        "OperatingSystem": "Windows 7",
+        "InstalledBrowsers": [
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 1,
+              "Version": "8.0.7601.17514"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 2,
+              "Version": "46.0.1 (x86 ru)"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 5,
+              "Version": "5.1.7"
+            }
+          },
+          {
+            "__type": "ArtOfTest.WebAii.Design.Execution.Scheduling.BrowserInformation",
+            "__value": {
+              "Type": 7,
+              "Version": ""
+            }
+          }
+        ],
+        "Status": 0,
+        "ServiceUri": null,
+        "DBState": 0,
+        "UserName": "Iakov"
+      }
+    },
+    "Messages": null,
+    "RunId": "216a7cb7-dde1-47e0-bcff-8d12ce9955bd",
+    "Comment": null,
+    "TestListId": "448d4b8e-b35f-4d7c-b9bd-1363eab33f5a",
+    "IsManual": false,
+    "DispatchGroupId": "00000000-0000-0000-0000-000000000000"
+  }
+}
