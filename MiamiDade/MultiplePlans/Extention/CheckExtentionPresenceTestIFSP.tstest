@@ -145,55 +145,6 @@
             "QcVersionStamp": 0,
             "Version": 200
           }
-        },
-        {
-          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
-          "__value": {
-            "Runtime ID": "12b2a466-0e5b-4e1a-82fe-ec6670b8ae78",
-            "Description": "Close pop-up window : '/IEP/Events/ViewEvent?eventId=3ed16b89-ad02-4673-9767-a60400845990'",
-            "CustomDescription": null,
-            "Step": {
-              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.HtmlDialogHandlerDescriptor",
-              "__value": {
-                "IsUrlPartial": true,
-                "PopupUrl": "/IEP/Events/ViewEvent?eventId=3ed16b89-ad02-4673-9767-a60400845990",
-                "PopupWaitTimeout": 15000,
-                "InitializationTimeIE": 250,
-                "HandleState": 1,
-                "IsModalPopup": false,
-                "ModalPopupPartialCaption": "",
-                "WaitOnElements": false,
-                "WaitOnElementsTimeout": 0,
-                "UseStepWaitOnElementsTimout": false,
-                "UsejQuery": false,
-                "UseBackupSearch": true,
-                "ClosesBrowser": false,
-                "AjaxTimeout": 0,
-                "Pause": 0,
-                "RunsAgainstVersion": "",
-                "Constraints": {
-                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
-                  "__value": {
-                    "ConstraintValues": {}
-                  }
-                },
-                "Elements": {},
-                "StepType": 4,
-                "LogMessageOnFailure": "",
-                "EditorType": "",
-                "DataBindingExpressions": {}
-              }
-            },
-            "Enabled": true,
-            "Order": 4,
-            "Id": "",
-            "StepState": 0,
-            "ContinueOnFailure": false,
-            "StepImageKey": "CheckExtentionPresenceTestIFSP0r4ervo4.3kk",
-            "QcId": 0,
-            "QcVersionStamp": 0,
-            "Version": 200
-          }
         }
       ]
     },

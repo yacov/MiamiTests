@@ -53,16 +53,16 @@ namespace MiamiDade
                         String studentID = "0";
                         
                         if ((bbaseUrl.Contains("miami.acceliqc.com")))
-            	{
-            	    studentID = "43657";
-            	}
-            	else if (bbaseUrl.Contains("miami-demo.accelidemo.com"))
-            	{
-            	    studentID = "14";
+                {
+                    studentID = "43657";
+                }
+                else if (bbaseUrl.Contains("miami-demo.accelidemo.com"))
+                {
+                    studentID = "14";
                    
-            	}
+                }
                 
-                String address = "/IEP/Students/ViewStudent?CommonStudentId="+studentID+"&studentViewType=Events&programType=MiamiIFSP";
+                String address = "IEP/Students/ViewStudent?CommonStudentId="+studentID+"&studentViewType=Events&programType=MiamiIFSP";
                  ActiveBrowser.NavigateTo(Settings.Current.Web.BaseUrl+address, true);
             
         }
