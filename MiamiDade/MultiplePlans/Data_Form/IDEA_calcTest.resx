@@ -118,46 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CheckEvaluationPresenceTestjqh5gszl.lbd" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckEvaluationPresenceTestluanxznj.ayr" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckEvaluationPresenceTest2t1oy2e3.vih" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckEvaluationPresenceTestfqavjdf1.jqq" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckTransitionPresenceTestIFSPippq3vip.nxl" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckTransitionPresenceTestIFSPodtal5se.zjt" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckPartBRightsPresenceTestIFSPxbq1foux.mfr" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckExtentionPresenceTestIFSPrkikz3on.w3e" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckExtentionPresenceTestIFSP0r4ervo4.3kk" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckExtentionPresenceTestIFSPkyalxswl.5up" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckExtentionPresenceTestIFSPtblovl40.3um" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckExtentionPresenceTestIFSPkdx2dci5.vpa" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckDataFormPresenceTestIFSP2wfdjcz2.neq" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CheckDataFormPresenceTestIFSPcfnv5kgl.0os" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="IDEA_calcTestlbh345w4.ga0" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
 </root>
