@@ -68,7 +68,7 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "b0367bf3-6daf-4339-9e70-199ae47661ca",
-            "Description": "Execute test 'GoToStIFSPEvents'",
+            "Description": "Execute test 'GoTo10YStIFSP.tstest'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExecuteTestActionDescriptor",
@@ -76,8 +76,8 @@
                 "WaitOnElementsTimeout": 0,
                 "UseStepWaitOnElementsTimout": false,
                 "WaitOnElements": false,
-                "TestName": "GoToStIFSPEvents",
-                "TestPath": "Methods\\GoToStIFSPEvents.tstest",
+                "TestName": "GoTo10YStIFSP.tstest",
+                "TestPath": "Methods\\GoTo10YStIFSP.tstest",
                 "TestUniqueId": "cfe4db5a-59fd-43df-804d-646e05a86e50",
                 "Pause": 0,
                 "RunsAgainstVersion": "",

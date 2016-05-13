@@ -19,7 +19,7 @@ using ArtOfTest.WebAii.Silverlight.UI;
 namespace MiamiDade
 {
 
-    public class GoToStIFSPEvents : BaseWebAiiTest
+    public class GoTo2YStIFSP : BaseWebAiiTest
     {
         #region [ Dynamic Pages Reference ]
 
@@ -54,11 +54,11 @@ namespace MiamiDade
                         
                         if ((bbaseUrl.Contains("miami.acceliqc.com")))
                 {
-                    studentID = "43657";
+                    studentID = "4891384";
                 }
                 else if (bbaseUrl.Contains("miami-demo.accelidemo.com"))
                 {
-                    studentID = "14";
+                    studentID = "11";
                    
                 }
                 

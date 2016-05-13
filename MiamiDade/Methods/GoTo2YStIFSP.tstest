@@ -23,7 +23,7 @@
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.CodedStepDescriptor",
               "__value": {
-                "Code": "                        String bbaseUrl = Settings.Current.Web.BaseUrl.ToString();\r\n                        String studentID = \"0\";\r\n                        \r\n                        if ((bbaseUrl.Contains(\"miami.acceliqc.com\")))\r\n                {\r\n                    studentID = \"43657\";\r\n                }\r\n                else if (bbaseUrl.Contains(\"miami-demo.accelidemo.com\"))\r\n                {\r\n                    studentID = \"14\";\r\n                   \r\n                }\r\n                \r\n                String address = \"IEP/Students/ViewStudent?CommonStudentId=\"+studentID+\"&studentViewType=Events&programType=MiamiIFSP\";\r\n                 ActiveBrowser.NavigateTo(Settings.Current.Web.BaseUrl+address, true);\r\n            ",
+                "Code": "                        String bbaseUrl = Settings.Current.Web.BaseUrl.ToString();\r\n                        String studentID = \"0\";\r\n                        \r\n                        if ((bbaseUrl.Contains(\"miami.acceliqc.com\")))\r\n                {\r\n                    studentID = \"4891384\";\r\n                }\r\n                else if (bbaseUrl.Contains(\"miami-demo.accelidemo.com\"))\r\n                {\r\n                    studentID = \"11\";\r\n                   \r\n                }\r\n                \r\n                String address = \"IEP/Students/ViewStudent?CommonStudentId=\"+studentID+\"&studentViewType=Events&programType=MiamiIFSP\";\r\n                 ActiveBrowser.NavigateTo(Settings.Current.Web.BaseUrl+address, true);\r\n            ",
                 "RequiresSilverlight": false,
                 "WaitOnElements": true,
                 "WaitOnElementsTimeout": 30000,
@@ -177,9 +177,9 @@
     "UseDefaultWpfAppPath": false,
     "TestAssembly": "MiamiDade.dll",
     "TestAssemblyPath": "bin",
-    "TestClass": "MiamiDade.GoToStIFSPEvents",
+    "TestClass": "MiamiDade.GoTo2YStIFSP",
     "IsManual": false,
-    "ResourceFilePath": "Methods\\GoToStIFSPEvents.resx",
+    "ResourceFilePath": "Methods\\GoTo2YStIFSP.resx",
     "HasCodeBehind": true,
     "DataInfo": {
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
@@ -209,13 +209,13 @@
     "QcTestVersionStamp": 0,
     "TestLinks": [],
     "Description": "",
-    "Name": "GoToStIFSPEvents",
+    "Name": "GoTo2YStIFSP",
     "Owner": "",
-    "Path": "Methods\\GoToStIFSPEvents.tstest",
+    "Path": "Methods\\GoTo2YStIFSP.tstest",
     "Priority": 0,
     "TestType": 0,
-    "UniqueId": "cfe4db5a-59fd-43df-804d-646e05a86e50",
-    "Id": "cfe4db5a-59fd-43df-804d-646e05a86e50",
+    "UniqueId": "c6df66fe-8e9c-45a0-8ff5-e1845b9cabcc",
+    "Id": "c6df66fe-8e9c-45a0-8ff5-e1845b9cabcc",
     "ProjectId": "aa111da7-2e74-4d70-9ee0-e3a3a9ddc81e",
     "Version": 200
   }

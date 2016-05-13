@@ -68,7 +68,7 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "690ec869-4d3b-4916-8b6c-aab8e905ec48",
-            "Description": "Execute test 'GoTo10YStIFSP.tstest'",
+            "Description": "Execute test 'GoTo10YStIFSP'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExecuteTestActionDescriptor",
@@ -76,7 +76,7 @@
                 "WaitOnElementsTimeout": 0,
                 "UseStepWaitOnElementsTimout": false,
                 "WaitOnElements": false,
-                "TestName": "GoTo10YStIFSP.tstest",
+                "TestName": "GoTo10YStIFSP",
                 "TestPath": "Methods\\GoTo10YStIFSP.tstest",
                 "TestUniqueId": "cfe4db5a-59fd-43df-804d-646e05a86e50",
                 "Pause": 0,
@@ -108,8 +108,8 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "7dba8c3f-9242-40ba-9077-c68026b21297",
-            "Description": "Execute test 'CheckPNWPDataModuleIFSP'",
+            "Runtime ID": "b0ea9228-fd0e-4cfe-9264-98a6bb32c6dc",
+            "Description": "Execute test 'CheckDataFormDataModuleIFSP'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ExecuteTestActionDescriptor",
@@ -117,9 +117,9 @@
                 "WaitOnElementsTimeout": 0,
                 "UseStepWaitOnElementsTimout": false,
                 "WaitOnElements": false,
-                "TestName": "CheckPNWPDataModuleIFSP",
-                "TestPath": "MultiplePlans\\Fape_Form\\CheckPNWPDataModuleIFSP.tstest",
-                "TestUniqueId": "91b14d58-0665-44b1-8d5f-b4130337332d",
+                "TestName": "CheckDataFormDataModuleIFSP",
+                "TestPath": "MultiplePlans\\Data_Form\\CheckDataFormDataModuleIFSP.tstest",
+                "TestUniqueId": "025cfdda-dcab-46cd-8c65-1aea6a483687",
                 "Pause": 0,
                 "RunsAgainstVersion": "",
                 "Constraints": {
@@ -140,7 +140,7 @@
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
-            "StepImageKey": "CheckPNWPPresenceTestIFSPpfz1mhqa.rgv",
+            "StepImageKey": "CheckDataFormPresenceTestIFSP2wfdjcz2.neq",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200
@@ -162,7 +162,7 @@
     "TestAssemblyPath": "bin",
     "TestClass": "",
     "IsManual": false,
-    "ResourceFilePath": "MultiplePlans\\Fape_Form\\CheckPNWPPresenceTestIFSP.resx",
+    "ResourceFilePath": "MultiplePlans\\Data_Form\\CheckDataFormPresenceTestIFSP.resx",
     "HasCodeBehind": false,
     "DataInfo": {
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
@@ -195,13 +195,13 @@
     "CustomProperty3": "15885",
     "TestLinks": [],
     "Description": "",
-    "Name": "CheckPNWPPresenceTestIFSP",
+    "Name": "CheckDataFormPresenceTestIFSP",
     "Owner": "",
-    "Path": "MultiplePlans\\Fape_Form\\CheckPNWPPresenceTestIFSP.tstest",
+    "Path": "MultiplePlans\\Data_Form\\CheckDataFormPresenceTestIFSP.tstest",
     "Priority": 3,
     "TestType": 0,
-    "UniqueId": "70cb5dea-074e-4d7d-bb7b-88ff008f128b",
-    "Id": "70cb5dea-074e-4d7d-bb7b-88ff008f128b",
+    "UniqueId": "0032cc41-9ac1-4f28-8fe8-5b13bcb9a5d1",
+    "Id": "0032cc41-9ac1-4f28-8fe8-5b13bcb9a5d1",
     "ProjectId": "aa111da7-2e74-4d70-9ee0-e3a3a9ddc81e",
     "Version": 200
   }
