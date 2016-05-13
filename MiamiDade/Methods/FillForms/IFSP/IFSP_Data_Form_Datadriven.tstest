@@ -876,7 +876,7 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "99adb603-6506-4242-aadb-c743470a9a0b",
-            "Description": "Click 'BtnUpdateFormLink'",
+            "Description": "Click 'BtnUpdateFormLink0'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClickActionDescriptor",
@@ -884,7 +884,7 @@
                 "SimulateRealClick": false,
                 "UsejQuery": true,
                 "UseBackupSearch": true,
-                "ClosesBrowser": false,
+                "ClosesBrowser": true,
                 "AjaxTimeout": 0,
                 "Pause": 0,
                 "WaitOnElementsTimeout": 30000,

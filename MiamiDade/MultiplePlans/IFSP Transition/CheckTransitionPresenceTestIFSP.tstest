@@ -145,6 +145,55 @@
             "QcVersionStamp": 0,
             "Version": 200
           }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "17eac36f-1af2-4999-bba8-ba04e2e32424",
+            "Description": "Close pop-up window : '/IEP/Students/ViewStudent?CommonStudentId=43657&studentViewType=Events&programType=MiamiIFSP'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.HtmlDialogHandlerDescriptor",
+              "__value": {
+                "IsUrlPartial": true,
+                "PopupUrl": "/IEP/Students/ViewStudent?CommonStudentId=43657&studentViewType=Events&programType=MiamiIFSP",
+                "PopupWaitTimeout": 15000,
+                "InitializationTimeIE": 250,
+                "HandleState": 1,
+                "IsModalPopup": false,
+                "ModalPopupPartialCaption": "",
+                "WaitOnElements": false,
+                "WaitOnElementsTimeout": 0,
+                "UseStepWaitOnElementsTimout": false,
+                "UsejQuery": false,
+                "UseBackupSearch": true,
+                "ClosesBrowser": false,
+                "AjaxTimeout": 0,
+                "Pause": 0,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {}
+                  }
+                },
+                "Elements": {},
+                "StepType": 4,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 4,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "CheckTransitionPresenceTestIFSPaoutudxa.u1t",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
         }
       ]
     },
